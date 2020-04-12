@@ -7,13 +7,12 @@ from data_processing import *
 
 CWD = os.getcwd()
 
-test_original_path = CWD + "/data/test.original"
-test_compressed_path = CWD + "/data/test.compressed"
 params_path = CWD + "/config/params.json"
-contraction_mapping_path = CWD +  "/data/contraction_mapping.json"
 
+print(params_path)
 params = load_data(params_path)
 
+print(params)
 epoch = params["epoch"]
 dropout = params["dropout"]
 min_loss = params["min_loss"]
@@ -28,17 +27,9 @@ no_of_hidden_size = params["no_of_hidden_size"]
 lcl_learning_rate = params["lcl_learning_rate"]
 teacher_forcing_ratio = params["teacher_forcing_ratio"]
 
-#path to save the model
-model_name = "Ep_{}_Ds_{}_Lr_{}_Hs_{}_Ml_{}_Tf_{}".format(epoch,DATA_SIZE,
-                no_of_hidden_size, min_loss, teacher_forcing_ratio)
-model_folder_path = CWD + "/model/" + model_name
 
-encoder_path = "{}/{}_Encoder.pt".format(model_folder_path,model_name)
-decoder_path = "{}/{}_Decoder.pt".format(model_folder_path,model_name)
-
-contraction_mapping = load_data(contraction_mapping_path)
-
-def evaluate(encoder, decoder, sentence, max_length):
+def evaluate(encoder, decoder, sentence, input_lang, output_lang):
+    max_length = MAX_LENGTH
     with torch.no_grad():
         input_tensor = tensorFromSentence(input_lang, sentence, device, EOS_token, UNK_token)
         input_length = input_tensor.size()[0]
@@ -87,7 +78,7 @@ def load_saved_decoder(lcl_hidden_size,lcl_output_lang,lcl_decoder_model_path):
     decoder_model.load_state_dict(torch.load(lcl_decoder_model_path, map_location=device))
     return decoder_model
 
-def load_obj(obj_type,obj_name_path):
+def load_obj(obj_name_path):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     obj_type = torch.load(obj_name_path, map_location=device)
     return obj_type
@@ -105,14 +96,15 @@ def calculate_rouge(rouge, pred_trg, real_trg):
     scores = rouge.get_scores(pred_trg, real_trg)
     return scores 
 
-def calculate_Result(encoder, decoder,lcl_pairs, n=50):
-    result_value_rouge_score = []
+def calculate_Result(encoder, decoder,pairs,input_lang, output_lang):
+    result_value_rouge_score = {}
     rouge = Rouge()
     
-    for i in range(n):
-        pair = random.choice(lcl_pairs)
+    idx = 1
 
-        output_words, attentions = evaluate(encoder, decoder, pair[0])
+    for pair in pairs:
+        
+        output_words, attentions = evaluate(encoder, decoder, pair[0], input_lang, output_lang)
         output_sentence = ' '.join(output_words)
 
         reference = [pair[1].split()]
@@ -121,59 +113,80 @@ def calculate_Result(encoder, decoder,lcl_pairs, n=50):
         target_predicted = output_words
         
         score = calculate_rouge(rouge,target_predicted,reference)
-        result_value_rouge_score.append((pair[0],pair[1].split(),target_predicted,score))
+        
+        result_value_rouge_score[idx] = {}
+        result_value_rouge_score[idx]["Original_Text"] = pair[0]
+        result_value_rouge_score[idx]["Orignal_Summary"] = pair[1]
+        result_value_rouge_score[idx]["Generated_Summary"] = " ".join(target_predicted)
+        result_value_rouge_score[idx]["Score"] = score
+        idx += 1
 
     return result_value_rouge_score
 
 def main():
 
-    test_result_data_path = "{}/{}_vocab.pt".format(model_folder_path,model_name)
+    test_original_path = CWD + "/data/test.original"
+    test_compressed_path = CWD + "/data/test.compressed"
+    test_combined = CWD + "/data/test.combined"
 
-    print("Model Already Exist")
-         hidden_size = no_of_hidden_size
-         encoder_model = load_saved_encoder(input_lang,hidden_size,encoder_model_path)
-         decoder_model = load_saved_decoder(hidden_size,output_lang,decoder_model_path)
-         model_performance = load_obj(model_performance,params)
-         vocab = load_obj(vocab,vocab_params)
+    train_original_path = CWD + "/data/train.original"
+    train_compressed_path = CWD + "/data/train.compressed"
+    train_combined = CWD + "/data/train.combined"
+    
 
-result_value_rouge_score = calculate_Result(encoder_model, decoder_model,pairs)
-    result_value_rouge_score_dict = {}
-    result_value_rouge_score_dict['result'] = result_value_rouge_score 
-    torch.save(result_value_rouge_score_dict, train_result_data_path)
+    source_prefix,target_prefix = "original", "compressed"
+    contraction_mapping_path = CWD +  "/data/contraction_mapping.json"
+    contraction_mapping = load_data(contraction_mapping_path)
+    
+    #path to load the model
+    model_name = "Ep_{}_Ds_{}_Lr_{}_Hs_{}_Ml_{}_Tf_{}".format(epoch,DATA_SIZE,
+                    lcl_learning_rate,no_of_hidden_size, min_loss, teacher_forcing_ratio)
+    model_folder_path = CWD + "/model/" + model_name
 
-    limit = 10
+    encoder_path = "{}/{}_Encoder.pt".format(model_folder_path,model_name)
+    decoder_path = "{}/{}_Decoder.pt".format(model_folder_path,model_name)
+    params_path = "{}/{}_params.pt".format(model_folder_path,model_name)
+    vocab_path = "{}/{}_vocab.pt".format(model_folder_path,model_name)    
+    train_result_path = CWD + "/results/{}_train_result.json".format(model_name)
+    test_result_path = CWD + "/results/{}_test_result.json".format(model_name)
+        
+    print("Encoder Model Path :" ,encoder_path)
+    print("Decoder Model Path :" ,decoder_path)
+    print("Params Path :" ,params_path)
+    print("Vocab Path :" ,vocab_path)
+    print("Train Result Path :",train_result_path)
+    print("Test Result Path :",test_result_path)
 
-    for item in result_value_rouge_score:
-      print(" Source Language ",item[0])
-      print(" Input Target",item[1])
-      print(" Output Target",item[2])
-      print(" Score ",item[3])
-      limit -= 1
+    print("Encoder Model Exist " ,os.path.isfile(encoder_path))
+    print("Decoder Model Exist " ,os.path.isfile(decoder_path))
+    print("Params File Exist " ,os.path.isfile(params_path))
+    print("Vocab File Exist " ,os.path.isfile(vocab_path))
 
-    prefix = "test"
-    sourceLangPath = root_directory +prefix+".original"
-    sourcePrefix = "original"
-    targetLangPath = root_directory+prefix+".compressed"
-    targetPrefix = "compressed"
-    train_combined = prefix + "_" + sourcePrefix + "_" + targetPrefix + ".txt"
+    if os.path.isfile(encoder_path) == False or os.path.isfile(decoder_path) == False \
+        or os.path.isfile(params_path) == False \
+        or os.path.isfile(vocab_path) == False:
+        print("Model doen not exists. Evaluation over")
+        return 0
 
 
-    #isFilePresent = os.path.isfile(train_combined)
-    #if isFilePresent == False:
-    prepareInput(sourceLangPath,targetLangPath,train_combined,contraction_mapping)
-    test_input_lang, test_output_lang, test_pairs = prepareData(sourcePrefix, targetPrefix,train_combined)
-    print(random.choice(test_pairs))
+    vocab = load_obj(vocab_path)
+    params = load_obj(params_path)
+    train_input_lang = vocab["input_lang"]
+    train_output_lang = vocab["output_lang"]
+    encoder_model = load_saved_encoder(train_input_lang,no_of_hidden_size,encoder_path)
+    decoder_model = load_saved_decoder(no_of_hidden_size,train_output_lang,decoder_path)
 
-    result_value_rouge_score_test = calculate_Result(encoder_model, decoder_model,test_pairs)
-    result_value_rouge_score_dict_test = {}
-    result_value_rouge_score_dict_test['result'] = result_value_rouge_score_test 
-    torch.save(result_value_rouge_score_dict_test, test_result_data_path)
+    prepareInput(train_original_path,train_compressed_path,train_combined,contraction_mapping,DATA_SIZE)
+    prepareInput(test_original_path,test_compressed_path,test_combined,contraction_mapping,DATA_SIZE)
 
-    limit = 10
+    train_input_lang, train_output_lang, train_pairs = prepareData(source_prefix, target_prefix,train_combined,SOS_token,EOS_token,UNK_token)
+    test_input_lang, test_output_lang, test_pairs = prepareData(source_prefix, target_prefix,test_combined,SOS_token,EOS_token,UNK_token)
 
-    for item in result_value_rouge_score_test:
-        print(" Source Language ",item[0])
-        print(" Input Target",item[1])
-        print(" Output Target",item[2])
-        print(" Score ",item[3])
-        limit -= 1
+    train_result = calculate_Result(encoder_model, decoder_model,train_pairs,train_input_lang, train_output_lang)
+    test_result = calculate_Result(encoder_model, decoder_model,test_pairs,train_input_lang, train_output_lang)
+
+    save_data(train_result_path,train_result)
+    save_data(test_result_path,test_result)
+
+if __name__=='__main__':
+    main()

@@ -1,5 +1,5 @@
 {
-    "DATA_SIZE": 100,
+    "DATA_SIZE": 1000,
     "EOS_token": 1,
     "MAX_LENGTH": 200,
     "SOS_token": 0,
@@ -8,7 +8,7 @@
     "dropout": 0.1,
     "epoch": 150,
     "lcl_learning_rate": 0.01,
-    "min_loss": 0.7,
+    "min_loss": 0.5,
     "n_layers": 1,
     "no_of_hidden_size": 256,
     "teacher_forcing_ratio": 0.5

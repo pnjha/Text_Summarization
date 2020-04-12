@@ -1,12 +1,18 @@
 from packages import *
 
 def load_data(data_path):
-	with open(data_path, 'r') as fp:
-		return json.load(fp)
+    if os.path.isfile(data_path) == True:
+    	with open(data_path, 'r') as fp:
+    		return json.load(fp)
+    else:
+        print("File {} not found".format(data_path))
 
 def save_data(data_path,data):
-	with open(data_path, 'w') as fp:
-		json.dump(data, fp, indent=4, sort_keys=True)
+    if os.path.isfile(data_path) == False:
+        f = open(data_path,"w+")
+        f.close()
+    with open(data_path, 'w') as fp:
+        json.dump(data, fp, indent=4, sort_keys=True)
 
 def as_minutes(s):
     m = math.floor(s / 60)

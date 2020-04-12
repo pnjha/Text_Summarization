@@ -136,15 +136,13 @@ def main():
     encoder_path = "{}/{}_Encoder.pt".format(model_folder_path,model_name)
     decoder_path = "{}/{}_Decoder.pt".format(model_folder_path,model_name)
     params_path = "{}/{}_params.pt".format(model_folder_path,model_name)
-    vocab_path = "{}/{}_vocab.pt".format(model_folder_path,model_name)
-    train_result_path = "{}/{}_train_result_path.pt".format(model_folder_path,model_name)
+    vocab_path = "{}/{}_vocab.pt".format(model_folder_path,model_name)    
     
     
     print("Encoder Model Path :" ,encoder_path)
     print("Decoder Model Path :" ,decoder_path)
     print("Params Path :" ,params_path)
     print("Vocab Path :" ,vocab_path)
-    print("Train file Path :",train_result_path)
     
     print("Encoder Model Exist " ,os.path.isfile(encoder_path))
     print("Decoder Model Exist " ,os.path.isfile(decoder_path))
@@ -190,5 +188,5 @@ def main():
     
     show_plot(plot_losses,plot_path)
 
-
-main()
+if __name__=='__main__':
+    main()

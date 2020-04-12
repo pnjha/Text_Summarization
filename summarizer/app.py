@@ -1,4 +1,4 @@
-import os,errno
+import os,errno,gc
 from flask import Flask, render_template, request, send_from_directory, redirect, url_for, send_file,session
 from flask_bootstrap import Bootstrap
 from Summarizer import Summarizer
@@ -10,9 +10,15 @@ app.debug = True
 app.secret_key = os.urandom(24)
 bootstrap = Bootstrap(app)
 
+global su
+su = None
 
 @app.route('/')
 def landingPage():
+    global su
+    su = None
+    gc.collect()
+    su = Summarizer()
     UserData = {}
     UserData["summary"] = ""
     UserData["input_text"] = ""
@@ -20,22 +26,34 @@ def landingPage():
 
 @app.route('/summarize', methods=['POST'])
 def index():
+
+    gc.collect()
+    global su
     UserData = {}
-    su = Summarizer()
+    
     if request.method == "POST":
 
+        input_text = ""
+        expected_summary = ""
+
+        # try:
         input_text = request.form['input_text']
+        expected_summary = request.form['expected_summary']
+        
+        summary = su.get_summary(input_text)
 
-        try:
-            summary = su.get_summary(input_text)
-            print("Summary: ",summary)
-        except:
-            summary = sys.exc_info()
+        if expected_summary is not None and len(expected_summary) > 0:
+            flag = su.update_model(input_text,expected_summary)
 
-        UserData['summary'] = summary
+        print("Summary: ",summary)
+        
+        # except:
+        #     summary = sys.exc_info()
+
         UserData["input_text"] = input_text
+        UserData['expected_summary'] = expected_summary
+        UserData['summary'] = summary
 
-    su = None
     return render_template('index.html', **UserData)
 
 

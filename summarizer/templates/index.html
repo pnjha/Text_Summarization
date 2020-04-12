@@ -2,9 +2,17 @@
 
 {% block input_text %}
 <p>
-<textarea name ="input_text" id="w3mission" rows="4" cols="50" value="{{request.form.input_text}}" required>
+
+<textarea name ="input_text" rows="4" cols="50" value="{{request.form.input_text}}" required>
 {{input_text}}
 </textarea>
+<br>
+<label><b>Enter Expected Summary (Not Required)</b></label>
+<br>
+<textarea name="expected_summary" rows="4" cols="50" value="{{request.form.expected_summary}}">
+{{expected_summary}}
+</textarea>
+
 </p>
 {% endblock %}
 
@@ -13,3 +21,4 @@
 {{summary}}
 </textarea>
 {% endblock %} 
+

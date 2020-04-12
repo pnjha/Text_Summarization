@@ -13,6 +13,11 @@ import unicodedata
 from io import open
 from rouge import Rouge
 
+from nltk.translate import bleu
+from nltk.corpus import stopwords
+from nltk.translate.bleu_score import sentence_bleu
+from nltk.translate.bleu_score import SmoothingFunction
+
 import matplotlib.pyplot as plt
 plt.switch_backend('agg')
 import matplotlib.ticker as ticker
@@ -94,6 +99,60 @@ class ModelLayer:
 		self.no_of_hidden_size = 1024
 		self.lcl_learning_rate = 0.00001
 		self.dropout = 0.1
+		self.input_lang = None
+		self.output_lang = None
+		self.encoder_model = None
+		self.decoder_model = None
+		self.vocab = {}
+		self.load_models_params()
+		self.contraction_mapping = {
+			"ain't": "is not", "aren't": "are not","can't": "cannot", "'cause": "because", "could've": "could have", "couldn't": "could not","didn't": "did not",
+			"doesn't": "does not", "don't": "do not", "hadn't": "had not", "hasn't": "has not", "haven't": "have not",
+			"he'd": "he would","he'll": "he will", "he's": "he is", "how'd": "how did", "how'd'y": "how do you", "how'll": "how will", "how's": "how is",
+			"I'd": "I would", "I'd've": "I would have", "I'll": "I will", "I'll've": "I will have","I'm": "I am", "I've": "I have", "i'd": "i would",
+			"i'd've": "i would have", "i'll": "i will",  "i'll've": "i will have","i'm": "i am", "i've": "i have", "isn't": "is not", "it'd": "it would",
+			"it'd've": "it would have", "it'll": "it will", "it'll've": "it will have","it's": "it is", "let's": "let us", "ma'am": "madam",
+			"mayn't": "may not", "might've": "might have","mightn't": "might not","mightn't've": "might not have", "must've": "must have",
+			"mustn't": "must not", "mustn't've": "must not have", "needn't": "need not", "needn't've": "need not have","o'clock": "of the clock",
+			"oughtn't": "ought not", "oughtn't've": "ought not have", "shan't": "shall not", "sha'n't": "shall not", "shan't've": "shall not have",
+			"she'd": "she would", "she'd've": "she would have", "she'll": "she will", "she'll've": "she will have", "she's": "she is",
+			"should've": "should have", "shouldn't": "should not", "shouldn't've": "should not have", "so've": "so have","so's": "so as",
+			"this's": "this is","that'd": "that would", "that'd've": "that would have", "that's": "that is", "there'd": "there would",
+			"there'd've": "there would have", "there's": "there is", "here's": "here is","they'd": "they would", "they'd've": "they would have",
+			"they'll": "they will", "they'll've": "they will have", "they're": "they are", "they've": "they have", "to've": "to have",
+			"wasn't": "was not", "we'd": "we would", "we'd've": "we would have", "we'll": "we will", "we'll've": "we will have", "we're": "we are",
+			"we've": "we have", "weren't": "were not", "what'll": "what will", "what'll've": "what will have", "what're": "what are",
+			"what's": "what is", "what've": "what have", "when's": "when is", "when've": "when have", "where'd": "where did", "where's": "where is",
+			"where've": "where have", "who'll": "who will", "who'll've": "who will have", "who's": "who is", "who've": "who have",
+			"why's": "why is", "why've": "why have", "will've": "will have", "won't": "will not", "won't've": "will not have",
+			"would've": "would have", "wouldn't": "would not", "wouldn't've": "would not have", "y'all": "you all",
+			"y'all'd": "you all would","y'all'd've": "you all would have","y'all're": "you all are","y'all've": "you all have",
+			"you'd": "you would", "you'd've": "you would have", "you'll": "you will", "you'll've": "you will have",
+			"you're": "you are", "you've": "you have"}
+
+	def process_text(self,text,flag=False):
+	    stop_words = stopwords.words('english')
+	    text = text.lower()
+	    text = text.replace('\n','')
+	    text = re.sub(r'\(.*\)','',text)
+	    text = re.sub(r'[^a-zA-Z0-9. ]','',text)
+	    text = re.sub(r'\.',' . ',text)
+	    text = text.replace('.','')
+	    text = text.split()
+	    for i in range(len(text)):
+	        word = text[i]
+	        if word in self.contraction_mapping:
+	            text[i] = self.contraction_mapping[word]
+	    newtext = []
+	    for word in text:
+	        if word not in stop_words and len(word)>0:
+	            newtext.append(word)
+	    text = newtext
+	    if flag:
+	        text = text[::-1]
+	    text = " ".join(text)
+	    text = text.replace("'s",'') 
+	    return text
 
 	def indexesFromSentence(self, lang, sentence):
 
@@ -105,11 +164,9 @@ class ModelLayer:
 	    return torch.tensor(indexes, dtype=torch.long, device=device).view(-1, 1)
 
 	def showPlot(self, points):
-		plt.figure()
-		fig, ax = plt.subplots()
-		loc = ticker.MultipleLocator(base=0.2)
-		ax.yaxis.set_major_locator(loc)
 		plt.plot(points)
+		plt.savefig("plot.png")
+		plt.show()
 
 	def evaluate(self,encoder, decoder, sentence, max_length, input_lang, output_lang):
 
@@ -170,20 +227,16 @@ class ModelLayer:
 		output_sentence = ' '.join(output_words)
 		return output_sentence
 
-	def perform_summarization(self,input_text):
+	def load_models_params(self):
 
 		encoder_model_path = "Encoder_Model.pt"
 		decoder_model_path = "Decoder_Model.pt"
 		params = "params.pt"
 		vocab_params = "vocab.pt"
-
-		vocab = {}
-		encoder_model = None
-		decoder_model = None
+		
 		model_performance = {}
-		input_lang,output_lang = None, None
-
-		print("Parameters File Exist" ,os.path.isfile(params))
+		
+		# print("Parameters File Exist" ,os.path.isfile(params))
 		if os.path.isfile(params) == True:
 			model_performance = self.load_obj(params)
 		else:
@@ -199,32 +252,36 @@ class ModelLayer:
 		decoder_model_path = "Ep_"+ str(self.epoch) +"_Hd_"+ str(self.no_of_hidden_size) + "_lr_"+ str(self.lcl_learning_rate) +"_"+ decoder_model_path 
 		vocab_params = "Ep_"+ str(self.epoch) +"_Hd_"+ str(self.no_of_hidden_size) + "_lr_"+ str(self.lcl_learning_rate) +"_"+ vocab_params 
 		
-		print("Encoder Model Path :" ,encoder_model_path)
-		print("Decoder Model Path :" ,decoder_model_path)
-		print("Params Path :" ,params)
-		print("Vocab params Path :" ,vocab_params)
-		print("Encoder Model Exist " ,os.path.isfile(encoder_model_path))
-		print("Decoder Model Exist " ,os.path.isfile(decoder_model_path))
-		print("Vocab File Exist" ,os.path.isfile(vocab_params))
+		# print("Encoder Model Path :" ,encoder_model_path)
+		# print("Decoder Model Path :" ,decoder_model_path)
+		# print("Params Path :" ,params)
+		# print("Vocab params Path :" ,vocab_params)
+		# print("Encoder Model Exist " ,os.path.isfile(encoder_model_path))
+		# print("Decoder Model Exist " ,os.path.isfile(decoder_model_path))
+		# print("Vocab File Exist" ,os.path.isfile(vocab_params))
 
 
 		if os.path.isfile(encoder_model_path) == True and os.path.isfile(decoder_model_path) == True:
 			
 			hidden_size = self.no_of_hidden_size
-			vocab = self.load_obj(vocab_params)
-			input_lang = vocab["input_lang"]
-			output_lang = vocab["output_lang"]
-			encoder_model = self.load_saved_encoder(input_lang,hidden_size,encoder_model_path)
-			decoder_model = self.load_saved_decoder(hidden_size,output_lang,decoder_model_path)
-			vocab = None
+			self.vocab = self.load_obj(vocab_params)
+			self.input_lang = self.vocab["input_lang"]
+			self.output_lang = self.vocab["output_lang"]
+			self.encoder_model = self.load_saved_encoder(self.input_lang,hidden_size,encoder_model_path)
+			self.decoder_model = self.load_saved_decoder(hidden_size,self.output_lang,decoder_model_path)
+			self.vocab = None
 
-		print(model_performance)
-		print(encoder_model)
-		print(decoder_model)
-		print(input_lang)
-		print(output_lang)
+		# print(model_performance)
+		# print(encoder_model)
+		# print(decoder_model)
+		# print(input_lang)
+		# print(output_lang)
 
-		summary = self.get_summary(encoder_model, decoder_model,input_text,input_lang,output_lang)
+	def perform_summarization(self,input_text):
+
+		input_text = self.process_text(input_text)
+	
+		summary = self.get_summary(self.encoder_model, self.decoder_model,input_text,self.input_lang,self.output_lang)
 
 		data = {}
 		data["summary"] = summary

@@ -17,7 +17,7 @@ def load_data(data_path):
 # params["DATA_SIZE"] = 10000
 # params["epoch"] = 250
 # params["no_of_hidden_size"] = 256
-# params["lcl_learning_rate"] = 0.001
+# params["learning_rate"] = 0.001
 # params["min_loss"] = 0.7
 # params["dropout"] = 0.1
 # params["n_layers"] = 1

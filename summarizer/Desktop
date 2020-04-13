@@ -476,7 +476,7 @@ if os.path.isfile(encoder_model_path) == False or os.path.isfile(decoder_model_p
      torch.save(decoder_model.state_dict(), decoder_model_path)
 
      lcl_params = {'loss_list':plot_losses,'epoch_list':no_of_epoch,'lr':lcl_learning_rate,"dropout":dropout, "MAX_LENGTH":MAX_LENGTH,"epoch":epoch, "no_of_hidden_size":no_of_hidden_size}
-     lcl_params["lcl_learning_rate"] = lcl_learning_rate
+     lcl_params["learning_rate"] = lcl_learning_rate
 
      vocab = {'input_lang':input_lang, 'output_lang':output_lang}
      model_performance = lcl_params

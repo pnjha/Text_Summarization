@@ -24,7 +24,7 @@ DATA_SIZE = params["DATA_SIZE"]
 MAX_LENGTH = params["MAX_LENGTH"]
 batch_size = params["batch_size"]
 no_of_hidden_size = params["no_of_hidden_size"]
-lcl_learning_rate = params["lcl_learning_rate"]
+lcl_learning_rate = params["learning_rate"]
 teacher_forcing_ratio = params["teacher_forcing_ratio"]
 
 

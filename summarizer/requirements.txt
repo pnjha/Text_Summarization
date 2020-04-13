@@ -6,4 +6,5 @@ psutil
 requests
 Logger
 Werkzeug
+torch
 rouge

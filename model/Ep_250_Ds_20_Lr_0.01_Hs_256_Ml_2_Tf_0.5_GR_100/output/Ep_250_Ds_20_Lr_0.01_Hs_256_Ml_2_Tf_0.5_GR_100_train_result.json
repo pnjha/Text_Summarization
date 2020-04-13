@@ -1,0 +1,506 @@
+{
+    "1": {
+        "Generated_Summary": "serge ibaka has been granted spanish and food are being developed by a",
+        "Original_Text": "decided be will olympics 2012 the in spots where event the summer this eurobasket in country the for play will and citizenship spanish granted been has spain in played but congo the in born was who forward thunder city oklahoma the ibaka serge",
+        "Orignal_Summary": "serge ibaka has been granted spanish citizenship and will play in eurobasket",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.5384615334911242,
+                    "p": 0.5,
+                    "r": 0.5833333333333334
+                },
+                "rouge-2": {
+                    "f": 0.4166666617013889,
+                    "p": 0.38461538461538464,
+                    "r": 0.45454545454545453
+                },
+                "rouge-l": {
+                    "f": 0.5384615334911242,
+                    "p": 0.5,
+                    "r": 0.5833333333333334
+                }
+            }
+        ]
+    },
+    "2": {
+        "Generated_Summary": "catania held roma to a to help",
+        "Original_Text": "month last off called was that game a of minutes 25 remaining the out played teams the as wednesday on a serie in draw 11 a to roma held catania milan",
+        "Orignal_Summary": "catania held roma to a 1 1 draw in serie a",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.5263157845983379,
+                    "p": 0.625,
+                    "r": 0.45454545454545453
+                },
+                "rouge-2": {
+                    "f": 0.470588230449827,
+                    "p": 0.5714285714285714,
+                    "r": 0.4
+                },
+                "rouge-l": {
+                    "f": 0.6249999950781252,
+                    "p": 0.7142857142857143,
+                    "r": 0.5555555555555556
+                }
+            }
+        ]
+    },
+    "3": {
+        "Generated_Summary": "state street corporation has has awarded 55000 in",
+        "Original_Text": "needs operations investment their with managers asset midsized to small support to solution servicing investment new a launched has services trading and research investment and management investment servicing investment of provider a corporation street state",
+        "Orignal_Summary": "state street corporation has launched a new investment servicing solution",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.42105262659279785,
+                    "p": 0.4444444444444444,
+                    "r": 0.4
+                },
+                "rouge-2": {
+                    "f": 0.35294117148788934,
+                    "p": 0.375,
+                    "r": 0.3333333333333333
+                },
+                "rouge-l": {
+                    "f": 0.4444444395061729,
+                    "p": 0.5,
+                    "r": 0.4
+                }
+            }
+        ]
+    },
+    "4": {
+        "Generated_Summary": "massey energy the coal company could have its corporate charter revoked",
+        "Original_Text": "way their have organizations interest public if revoked charter corporate its have could country the in company coal largest fourth the energy massey",
+        "Orignal_Summary": "massey energy the coal company could have its corporate charter revoked",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-2": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-l": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                }
+            }
+        ]
+    },
+    "5": {
+        "Generated_Summary": "foundation for metrowest has awarded 55000 in a",
+        "Original_Text": "need in families to assistance winter provide that funds its of two on drawing region the across pantries food 37 to grants in 55000 awarded has metrowest for foundation",
+        "Orignal_Summary": "foundation for metrowest has awarded 55000 in grants to 37 food pantries across the region",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.5833333286458334,
+                    "p": 0.7777777777777778,
+                    "r": 0.4666666666666667
+                },
+                "rouge-2": {
+                    "f": 0.5454545408264463,
+                    "p": 0.75,
+                    "r": 0.42857142857142855
+                },
+                "rouge-l": {
+                    "f": 0.5833333286458334,
+                    "p": 0.7777777777777778,
+                    "r": 0.4666666666666667
+                }
+            }
+        ]
+    },
+    "6": {
+        "Generated_Summary": "wong wont rule out super raid",
+        "Original_Text": "budget may the in superannuation for concessions tax axing out rule to declined has wong penny minister finance 2013 26 march tuesday 0817 updated raid super out rule wont wong",
+        "Orignal_Summary": "wong wont rule out super raid",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-2": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-l": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                }
+            }
+        ]
+    },
+    "7": {
+        "Generated_Summary": "tiny robots are being developed by a",
+        "Original_Text": "company woolston a by developed being are problems any report to process industrial an into dropped be can that robots tiny",
+        "Orignal_Summary": "tiny robots are being developed by a company",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.874999995,
+                    "p": 0.875,
+                    "r": 0.875
+                },
+                "rouge-2": {
+                    "f": 0.8571428521428571,
+                    "p": 0.8571428571428571,
+                    "r": 0.8571428571428571
+                },
+                "rouge-l": {
+                    "f": 0.874999995,
+                    "p": 0.875,
+                    "r": 0.875
+                }
+            }
+        ]
+    },
+    "8": {
+        "Generated_Summary": "jordan and food are being developed to help help childrens hospital",
+        "Original_Text": "saturday on signed agreement an of part as issues regulatory nuclear on cooperate to pledged have korea south and jordan",
+        "Orignal_Summary": "jordan and south korea have pledged to cooperate on regulatory issues",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.26086956022684316,
+                    "p": 0.25,
+                    "r": 0.2727272727272727
+                },
+                "rouge-2": {
+                    "f": 0.09523809024943337,
+                    "p": 0.09090909090909091,
+                    "r": 0.1
+                },
+                "rouge-l": {
+                    "f": 0.2727272677272728,
+                    "p": 0.2727272727272727,
+                    "r": 0.2727272727272727
+                }
+            }
+        ]
+    },
+    "9": {
+        "Generated_Summary": "robert jackson will hold two town hall meetings",
+        "Original_Text": "officials elected manhattan northern other several with cooperation in meetings hall town two hold will jackson robert member council city completed been has budget citys the after week a only and holiday july of fourth the after just",
+        "Orignal_Summary": "robert jackson will hold two town hall meetings",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-2": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-l": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                }
+            }
+        ]
+    },
+    "10": {
+        "Generated_Summary": "tim cowlishaw made a bad",
+        "Original_Text": "pitchforks sharpening and torches lighting is blogosphere mma the now and joke bad a made cowlishaw tim",
+        "Orignal_Summary": "tim cowlishaw made a bad joke",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.8333333283333335,
+                    "p": 0.8333333333333334,
+                    "r": 0.8333333333333334
+                },
+                "rouge-2": {
+                    "f": 0.7999999950000002,
+                    "p": 0.8,
+                    "r": 0.8
+                },
+                "rouge-l": {
+                    "f": 0.8333333283333335,
+                    "p": 0.8333333333333334,
+                    "r": 0.8333333333333334
+                }
+            }
+        ]
+    },
+    "11": {
+        "Generated_Summary": "gordon brown had discussed the coal company could have its corporate charter revoked",
+        "Original_Text": "motors general for aid of amount specific any about talked not had but merkel angela chancellor german with crisis industry car the discussed had he monday said brown gordon minister prime",
+        "Orignal_Summary": "gordon brown had discussed the car industry crisis with angela merkel",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.39999999500800004,
+                    "p": 0.38461538461538464,
+                    "r": 0.4166666666666667
+                },
+                "rouge-2": {
+                    "f": 0.3478260819659736,
+                    "p": 0.3333333333333333,
+                    "r": 0.36363636363636365
+                },
+                "rouge-l": {
+                    "f": 0.39999999500800004,
+                    "p": 0.38461538461538464,
+                    "r": 0.4166666666666667
+                }
+            }
+        ]
+    },
+    "12": {
+        "Generated_Summary": "fun and food are two to to help help childrens hospital",
+        "Original_Text": "july of month the during illinois of hospital childrens help to ways two are food and fun",
+        "Orignal_Summary": "fun and food are two ways to help childrens hospital",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.8181818131818183,
+                    "p": 0.8181818181818182,
+                    "r": 0.8181818181818182
+                },
+                "rouge-2": {
+                    "f": 0.699999995,
+                    "p": 0.7,
+                    "r": 0.7
+                },
+                "rouge-l": {
+                    "f": 0.8999999950500001,
+                    "p": 1.0,
+                    "r": 0.8181818181818182
+                }
+            }
+        ]
+    },
+    "13": {
+        "Generated_Summary": "police have denied fears response times will increase",
+        "Original_Text": "restructure forthcoming a to due increase will times response emergency that fears denied have police",
+        "Orignal_Summary": "police have denied fears response times will increase",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-2": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-l": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                }
+            }
+        ]
+    },
+    "14": {
+        "Generated_Summary": "mike beebe today announced two to to help help childrens hospital",
+        "Original_Text": "pardons six grant to intent his announced today beebe mike governor rock little",
+        "Orignal_Summary": "mike beebe today announced his intent to grant six pardons",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.45454544954545456,
+                    "p": 0.45454545454545453,
+                    "r": 0.45454545454545453
+                },
+                "rouge-2": {
+                    "f": 0.2999999950000001,
+                    "p": 0.3,
+                    "r": 0.3
+                },
+                "rouge-l": {
+                    "f": 0.4999999950500001,
+                    "p": 0.5555555555555556,
+                    "r": 0.45454545454545453
+                }
+            }
+        ]
+    },
+    "15": {
+        "Generated_Summary": "andrzej fonfara defeated glen johnson",
+        "Original_Text": "boxing of sport the from retire should he that johnson convince to enough was which victory decision unanimous a with johnson glen defeated fonfara andrzej",
+        "Orignal_Summary": "andrzej fonfara defeated glen johnson",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-2": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-l": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                }
+            }
+        ]
+    },
+    "16": {
+        "Generated_Summary": "fabio capello is being developed to help help",
+        "Original_Text": "victory successive fourth a record side his watching despite finals cup world 2010 the for qualifying of thoughts with away carried get to refusing is capello fabio manager england",
+        "Orignal_Summary": "fabio capello is refusing to get carried away",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.4999999950000001,
+                    "p": 0.5,
+                    "r": 0.5
+                },
+                "rouge-2": {
+                    "f": 0.2857142807142858,
+                    "p": 0.2857142857142857,
+                    "r": 0.2857142857142857
+                },
+                "rouge-l": {
+                    "f": 0.5333333283555556,
+                    "p": 0.5714285714285714,
+                    "r": 0.5
+                }
+            }
+        ]
+    },
+    "17": {
+        "Generated_Summary": "a former gulf breeze police have denied fears response times will increase",
+        "Original_Text": "randle robert police of chief deputy breeze gulf to according charges compensation unlawful and battery sexual on morning this arrested being is officer police breeze gulf former a",
+        "Orignal_Summary": "a former gulf breeze police officer is being arrested",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.4545454495867769,
+                    "p": 0.4166666666666667,
+                    "r": 0.5
+                },
+                "rouge-2": {
+                    "f": 0.39999999505,
+                    "p": 0.36363636363636365,
+                    "r": 0.4444444444444444
+                },
+                "rouge-l": {
+                    "f": 0.4545454495867769,
+                    "p": 0.4166666666666667,
+                    "r": 0.5
+                }
+            }
+        ]
+    },
+    "18": {
+        "Generated_Summary": "an abilene teenager was killed early sunday in a",
+        "Original_Text": "chapman of east just wreck onecar a in sunday early killed was teenager abilene an",
+        "Orignal_Summary": "an abilene teenager was killed early sunday in a wreck",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.899999995,
+                    "p": 0.9,
+                    "r": 0.9
+                },
+                "rouge-2": {
+                    "f": 0.888888883888889,
+                    "p": 0.8888888888888888,
+                    "r": 0.8888888888888888
+                },
+                "rouge-l": {
+                    "f": 0.899999995,
+                    "p": 0.9,
+                    "r": 0.9
+                }
+            }
+        ]
+    },
+    "19": {
+        "Generated_Summary": "the screenings identify for stroke vascular vascular",
+        "Original_Text": "osteoporosis and disease vascular peripheral aneurysm aortic abdominal stroke for risk high at people identify screenings the",
+        "Orignal_Summary": "the screenings identify for stroke vascular disease and osteoporosis",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.7058823479584776,
+                    "p": 0.75,
+                    "r": 0.6666666666666666
+                },
+                "rouge-2": {
+                    "f": 0.6666666616888889,
+                    "p": 0.7142857142857143,
+                    "r": 0.625
+                },
+                "rouge-l": {
+                    "f": 0.7499999950781251,
+                    "p": 0.8571428571428571,
+                    "r": 0.6666666666666666
+                }
+            }
+        ]
+    },
+    "20": {
+        "Generated_Summary": "sulieman benn bowled a marathon",
+        "Original_Text": "ability his over marks question the of many dispel to wednesday on england against test first the of day first the on overs 33 of spell uninterrupted marathon a bowled benn sulieman spinner indies west",
+        "Orignal_Summary": "sulieman benn bowled a marathon spell",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.8333333283333335,
+                    "p": 0.8333333333333334,
+                    "r": 0.8333333333333334
+                },
+                "rouge-2": {
+                    "f": 0.7999999950000002,
+                    "p": 0.8,
+                    "r": 0.8
+                },
+                "rouge-l": {
+                    "f": 0.8333333283333335,
+                    "p": 0.8333333333333334,
+                    "r": 0.8333333333333334
+                }
+            }
+        ]
+    },
+    "21": {
+        "Generated_Summary": "he uses two town to help help childrens hospital",
+        "Original_Text": "germany in patients his help to pigs miniature two uses he that claimed has physiotherapist dutch a",
+        "Orignal_Summary": "he uses two pigs to help his patients",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.5555555505555557,
+                    "p": 0.5555555555555556,
+                    "r": 0.5555555555555556
+                },
+                "rouge-2": {
+                    "f": 0.37499999500000003,
+                    "p": 0.375,
+                    "r": 0.375
+                },
+                "rouge-l": {
+                    "f": 0.5882352891349482,
+                    "p": 0.625,
+                    "r": 0.5555555555555556
+                }
+            }
+        ]
+    }
+}

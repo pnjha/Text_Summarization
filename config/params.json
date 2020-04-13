@@ -1,0 +1,16 @@
+{
+    "DATA_SIZE": 20,
+    "EOS_TOKEN": 1,
+    "MAX_LENGTH": 300,
+    "SOS_TOKEN": 0,
+    "UNK_TOKEN": 2,
+    "BATCH_SIZE": 1,
+    "DROPOUT": 0.1,
+    "EPOCHS": 250,
+    "LEARNING_RATE": 0.01,
+    "MAX_TRAIN_LOSS": 2,
+    "LAYERS": 1,
+    "HIDDEN_SIZE": 256,
+    "MAX_GRADIENT": 100,
+    "TEACHER_FORCING_RATE": 0.5
+}

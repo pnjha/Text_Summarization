@@ -26,7 +26,7 @@ def time_since(since, percent):
     rs = es - s
     return '%s (- %s)' % (as_minutes(s), as_minutes(rs))
 
-def show_plot(points, file_path):
-    plt.plot(points)
+def show_plot(Y_points,X_points, file_path):
+    plt.plot(Y_points,X_points)
     plt.savefig(file_path)
     plt.show()

@@ -1,0 +1,266 @@
+{
+    "1": {
+        "Generated_Summary": "wong wont rule out super",
+        "Original_Text": "morning this sleaford near a17 the on crash a following injuries minor with hospital to taken been have people five",
+        "Orignal_Summary": "five people have been taken to hospital with minor injuries following a crash on the a17 near sleaford",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                }
+            }
+        ]
+    },
+    "2": {
+        "Generated_Summary": "wong wont rule out super",
+        "Original_Text": "snow the of because missed days for up make to day presidents this classes holding are roads hampton in districts school several",
+        "Orignal_Summary": "several school districts are holding classes this presidents day to make up for days missed",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                }
+            }
+        ]
+    },
+    "3": {
+        "Generated_Summary": "wong wont rule out super",
+        "Original_Text": "arsenal or chelsea to move potential a to striker liverpool the link to star daily the led has this and afternoon this london in spotted was suarez luis",
+        "Orignal_Summary": "luis suarez was spotted in london",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                }
+            }
+        ]
+    },
+    "4": {
+        "Generated_Summary": "tim cowlishaw made a a bad",
+        "Original_Text": "department fire chicago the to according neighborhood gresham the in tree falling a by injured was woman a",
+        "Orignal_Summary": "a woman was injured by a falling tree",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.266666661688889,
+                    "p": 0.2857142857142857,
+                    "r": 0.25
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.1538461488757398,
+                    "p": 0.16666666666666666,
+                    "r": 0.14285714285714285
+                }
+            }
+        ]
+    },
+    "5": {
+        "Generated_Summary": "wong wont rule out super",
+        "Original_Text": "birmingham in exoffenders for day poetry interactive an leading today is zephaniah benjamin poet birmingham",
+        "Orignal_Summary": "benjamin zephaniah is today leading an poetry day for exoffenders",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                }
+            }
+        ]
+    },
+    "6": {
+        "Generated_Summary": "wong wont rule out super",
+        "Original_Text": "sector the in rules ownership foreign relaxed delhi new after billion 65 1 for unit indian its of control full take to approval regulatory seeking was it tuesday said vodafone giant phone mobile british",
+        "Orignal_Summary": "vodafone said it was seeking regulatory approval to take full control of its indian unit",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                }
+            }
+        ]
+    },
+    "7": {
+        "Generated_Summary": "wong wont rule out super",
+        "Original_Text": "each 12 by declined bank hdfc and hdfc bank icici like heavyweights financial as morning thursday on pressure under remain to continued markets",
+        "Orignal_Summary": "markets continued to remain under pressure",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                }
+            }
+        ]
+    },
+    "8": {
+        "Generated_Summary": "wong wont rule out super",
+        "Original_Text": "kane sadie and chase annabeth features which serapis of staff story short crossover latest his for cover the revealed has riordan rick",
+        "Orignal_Summary": "rick riordan has revealed the cover for his story staff of serapis",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                }
+            }
+        ]
+    },
+    "9": {
+        "Generated_Summary": "wong wont rule out super",
+        "Original_Text": "force use it should moscow to costs of warned washington and peninsula flashpoint the on calm restore help to vowed kremlin the as crimea into troops extra of thousands sending of saturday russia accused ukraine",
+        "Orignal_Summary": "ukraine accused russia of sending thousands of troops into crimea",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                }
+            }
+        ]
+    },
+    "10": {
+        "Generated_Summary": "tim cowlishaw made a a bad",
+        "Original_Text": "jury grand a by cleared just was restaurant orlando busy a outside fight a in father his killing with charged man a",
+        "Orignal_Summary": "a man charged with killing his father was cleared by a grand jury",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.19999999545000013,
+                    "p": 0.2857142857142857,
+                    "r": 0.15384615384615385
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.11111110666666683,
+                    "p": 0.16666666666666666,
+                    "r": 0.08333333333333333
+                }
+            }
+        ]
+    },
+    "11": {
+        "Generated_Summary": "state street corporation has has launched a a",
+        "Original_Text": "desert western volatile countrys the in militants alqaidalinked down hunt to offensive its with on pressed government the as monday on dozens wounded and people 20 least at killed iraq across attacks of wave new a",
+        "Orignal_Summary": "a wave of attacks across iraq killed at least 20 people",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.09999999505000023,
+                    "p": 0.1111111111111111,
+                    "r": 0.09090909090909091
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.11111110635802489,
+                    "p": 0.14285714285714285,
+                    "r": 0.09090909090909091
+                }
+            }
+        ]
+    }
+}

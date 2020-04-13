@@ -6,3 +6,4 @@ psutil
 requests
 Logger
 Werkzeug
+rouge

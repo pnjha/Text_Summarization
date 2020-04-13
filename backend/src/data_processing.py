@@ -2,7 +2,7 @@ from Lang import *
 from packages import *
 
 def process_text(text,contraction_mapping,flag=False):
-    stop_words = stopwords.words('english')
+    # stop_words = stopwords.words('english')
     text = text.lower()
     text = text.replace('\n','')
     text = re.sub(r'\(.*\)','',text)
@@ -14,11 +14,11 @@ def process_text(text,contraction_mapping,flag=False):
         word = text[i]
         if word in contraction_mapping:
             text[i] = contraction_mapping[word]
-    newtext = []
-    for word in text:
-        if word not in stop_words and len(word)>0:
-            newtext.append(word)
-    text = newtext
+    # newtext = []
+    # for word in text:
+    #     if word not in stop_words and len(word)>0:
+    #         newtext.append(word)
+    # text = newtext
     if flag:
         text = text[::-1]
     text = " ".join(text)

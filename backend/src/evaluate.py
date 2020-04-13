@@ -31,10 +31,12 @@ teacher_forcing_ratio = params["teacher_forcing_ratio"]
 def evaluate(encoder, decoder, sentence, input_lang, output_lang):
     max_length = MAX_LENGTH
     with torch.no_grad():
+
         input_tensor = tensorFromSentence(input_lang, sentence, device, EOS_token, UNK_token)
         input_length = input_tensor.size()[0]
         encoder_hidden = encoder.initHidden()
 
+        # resetting the encoder output 
         encoder_outputs = torch.zeros(max_length, encoder.hidden_size, device=device)
 
         for ei in range(input_length):
@@ -54,6 +56,9 @@ def evaluate(encoder, decoder, sentence, input_lang, output_lang):
             decoder_attentions[di] = decoder_attention.data
 
             topv, topi = decoder_output.data.topk(1)
+
+            # handling delimiters in the sentences
+
             if topi.item() == UNK_token:
                 decoded_words.append('<UNK>')
             if topi.item() == EOS_token:

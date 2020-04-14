@@ -1,0 +1,506 @@
+{
+    "1": {
+        "Generated_Summary": "five people have been taken to hospital with minor injuries following a crash the car with angela",
+        "Original_Text": "five people have been taken to hospital with minor injuries following a crash on the a17 near sleaford this morning",
+        "Orignal_Summary": "five people have been taken to hospital with minor injuries following a crash on the a17 near sleaford",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.7777777727777778,
+                    "p": 0.7777777777777778,
+                    "r": 0.7777777777777778
+                },
+                "rouge-2": {
+                    "f": 0.7058823479411767,
+                    "p": 0.7058823529411765,
+                    "r": 0.7058823529411765
+                },
+                "rouge-l": {
+                    "f": 0.7999999950040816,
+                    "p": 0.8235294117647058,
+                    "r": 0.7777777777777778
+                }
+            }
+        ]
+    },
+    "2": {
+        "Generated_Summary": "a woman was injured by a company",
+        "Original_Text": "a woman was injured by a falling tree in the gresham neighborhood according to the chicago fire department",
+        "Orignal_Summary": "a woman was injured by a falling tree",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.749999995,
+                    "p": 0.75,
+                    "r": 0.75
+                },
+                "rouge-2": {
+                    "f": 0.7142857092857143,
+                    "p": 0.7142857142857143,
+                    "r": 0.7142857142857143
+                },
+                "rouge-l": {
+                    "f": 0.7142857092857143,
+                    "p": 0.7142857142857143,
+                    "r": 0.7142857142857143
+                }
+            }
+        ]
+    },
+    "3": {
+        "Generated_Summary": "markets continued to remain under pressure",
+        "Original_Text": "markets continued to remain under pressure on thursday morning as financial heavyweights like icici bank hdfc and hdfc bank declined by 12 each",
+        "Orignal_Summary": "markets continued to remain under pressure",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-2": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-l": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                }
+            }
+        ]
+    },
+    "4": {
+        "Generated_Summary": "serge ibaka has been granted spanish and will will play in",
+        "Original_Text": "serge ibaka the oklahoma city thunder forward who was born in the congo but played in spain has been granted spanish citizenship and will play for the country in eurobasket this summer the event where spots in the 2012 olympics will be decided",
+        "Orignal_Summary": "serge ibaka has been granted spanish citizenship and will play in eurobasket",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.8333333283333335,
+                    "p": 0.8333333333333334,
+                    "r": 0.8333333333333334
+                },
+                "rouge-2": {
+                    "f": 0.7272727222727273,
+                    "p": 0.7272727272727273,
+                    "r": 0.7272727272727273
+                },
+                "rouge-l": {
+                    "f": 0.8695652124007562,
+                    "p": 0.9090909090909091,
+                    "r": 0.8333333333333334
+                }
+            }
+        ]
+    },
+    "5": {
+        "Generated_Summary": "catania held roma to a 1 1 draw in serie a",
+        "Original_Text": "milan catania held roma to a 11 draw in serie a on wednesday as the teams played out the remaining 25 minutes of a game that was called off last month",
+        "Orignal_Summary": "catania held roma to a 1 1 draw in serie a",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-2": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-l": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                }
+            }
+        ]
+    },
+    "6": {
+        "Generated_Summary": "state street corporation has launched a new investment servicing",
+        "Original_Text": "state street corporation a provider of investment servicing investment management and investment research and trading services has launched a new investment servicing solution to support small to midsized asset managers with their investment operations needs",
+        "Orignal_Summary": "state street corporation has launched a new investment servicing solution",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.899999995,
+                    "p": 0.9,
+                    "r": 0.9
+                },
+                "rouge-2": {
+                    "f": 0.888888883888889,
+                    "p": 0.8888888888888888,
+                    "r": 0.8888888888888888
+                },
+                "rouge-l": {
+                    "f": 0.899999995,
+                    "p": 0.9,
+                    "r": 0.9
+                }
+            }
+        ]
+    },
+    "7": {
+        "Generated_Summary": "massey energy the coal company could have its corporate charter revoked",
+        "Original_Text": "massey energy the fourth largest coal company in the country could have its corporate charter revoked if public interest organizations have their way",
+        "Orignal_Summary": "massey energy the coal company could have its corporate charter revoked",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-2": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-l": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                }
+            }
+        ]
+    },
+    "8": {
+        "Generated_Summary": "foundation for metrowest has awarded 55000 in grants to a 1 1 draw in serie a",
+        "Original_Text": "foundation for metrowest has awarded 55000 in grants to 37 food pantries across the region drawing on two of its funds that provide winter assistance to families in need",
+        "Orignal_Summary": "foundation for metrowest has awarded 55000 in grants to 37 food pantries across the region",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.5624999950195313,
+                    "p": 0.5294117647058824,
+                    "r": 0.6
+                },
+                "rouge-2": {
+                    "f": 0.5333333283555556,
+                    "p": 0.5,
+                    "r": 0.5714285714285714
+                },
+                "rouge-l": {
+                    "f": 0.6206896501783592,
+                    "p": 0.6428571428571429,
+                    "r": 0.6
+                }
+            }
+        ]
+    },
+    "9": {
+        "Generated_Summary": "wong wont rule out super raid",
+        "Original_Text": "wong wont rule out super raid updated 0817 tuesday march 26 2013 finance minister penny wong has declined to rule out axing tax concessions for superannuation in the may budget",
+        "Orignal_Summary": "wong wont rule out super raid",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-2": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-l": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                }
+            }
+        ]
+    },
+    "10": {
+        "Generated_Summary": "tiny robots are being developed by a company",
+        "Original_Text": "tiny robots that can be dropped into an industrial process to report any problems are being developed by a woolston company",
+        "Orignal_Summary": "tiny robots are being developed by a company",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-2": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-l": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                }
+            }
+        ]
+    },
+    "11": {
+        "Generated_Summary": "jordan and south korea have pledged to cooperate on regulatory",
+        "Original_Text": "jordan and south korea have pledged to cooperate on nuclear regulatory issues as part of an agreement signed on saturday",
+        "Orignal_Summary": "jordan and south korea have pledged to cooperate on regulatory issues",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.9090909040909091,
+                    "p": 0.9090909090909091,
+                    "r": 0.9090909090909091
+                },
+                "rouge-2": {
+                    "f": 0.899999995,
+                    "p": 0.9,
+                    "r": 0.9
+                },
+                "rouge-l": {
+                    "f": 0.9090909040909091,
+                    "p": 0.9090909090909091,
+                    "r": 0.9090909090909091
+                }
+            }
+        ]
+    },
+    "12": {
+        "Generated_Summary": "robert jackson will hold two town hall meetings",
+        "Original_Text": "just after the fourth of july holiday and only a week after the citys budget has been completed city council member robert jackson will hold two town hall meetings in cooperation with several other northern manhattan elected officials",
+        "Orignal_Summary": "robert jackson will hold two town hall meetings",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-2": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-l": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                }
+            }
+        ]
+    },
+    "13": {
+        "Generated_Summary": "tim cowlishaw made a bad joke",
+        "Original_Text": "tim cowlishaw made a bad joke and now the mma blogosphere is lighting torches and sharpening pitchforks",
+        "Orignal_Summary": "tim cowlishaw made a bad joke",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-2": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-l": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                }
+            }
+        ]
+    },
+    "14": {
+        "Generated_Summary": "gordon brown had discussed the car industry with angela merkel",
+        "Original_Text": "prime minister gordon brown said monday he had discussed the car industry crisis with german chancellor angela merkel but had not talked about any specific amount of aid for general motors",
+        "Orignal_Summary": "gordon brown had discussed the car industry crisis with angela merkel",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.9090909040909091,
+                    "p": 0.9090909090909091,
+                    "r": 0.9090909090909091
+                },
+                "rouge-2": {
+                    "f": 0.7999999950000002,
+                    "p": 0.8,
+                    "r": 0.8
+                },
+                "rouge-l": {
+                    "f": 0.9090909040909091,
+                    "p": 0.9090909090909091,
+                    "r": 0.9090909090909091
+                }
+            }
+        ]
+    },
+    "15": {
+        "Generated_Summary": "fun and food are two ways to help childrens",
+        "Original_Text": "fun and food are two ways to help childrens hospital of illinois during the month of july",
+        "Orignal_Summary": "fun and food are two ways to help childrens hospital",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.899999995,
+                    "p": 0.9,
+                    "r": 0.9
+                },
+                "rouge-2": {
+                    "f": 0.888888883888889,
+                    "p": 0.8888888888888888,
+                    "r": 0.8888888888888888
+                },
+                "rouge-l": {
+                    "f": 0.899999995,
+                    "p": 0.9,
+                    "r": 0.9
+                }
+            }
+        ]
+    },
+    "16": {
+        "Generated_Summary": "police have denied fears response times will increase",
+        "Original_Text": "police have denied fears that emergency response times will increase due to a forthcoming restructure",
+        "Orignal_Summary": "police have denied fears response times will increase",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-2": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-l": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                }
+            }
+        ]
+    },
+    "17": {
+        "Generated_Summary": "mike beebe today announced his to get carried away",
+        "Original_Text": "little rock governor mike beebe today announced his intent to grant six pardons",
+        "Orignal_Summary": "mike beebe today announced his intent to grant six pardons",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.5999999950000001,
+                    "p": 0.6,
+                    "r": 0.6
+                },
+                "rouge-2": {
+                    "f": 0.44444443944444445,
+                    "p": 0.4444444444444444,
+                    "r": 0.4444444444444444
+                },
+                "rouge-l": {
+                    "f": 0.5999999950000001,
+                    "p": 0.6,
+                    "r": 0.6
+                }
+            }
+        ]
+    },
+    "18": {
+        "Generated_Summary": "andrzej fonfara defeated glen johnson",
+        "Original_Text": "andrzej fonfara defeated glen johnson with a unanimous decision victory which was enough to convince johnson that he should retire from the sport of boxing",
+        "Orignal_Summary": "andrzej fonfara defeated glen johnson",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-2": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-l": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                }
+            }
+        ]
+    },
+    "19": {
+        "Generated_Summary": "fabio capello is refusing to get carried away",
+        "Original_Text": "england manager fabio capello is refusing to get carried away with thoughts of qualifying for the 2010 world cup finals despite watching his side record a fourth successive victory",
+        "Orignal_Summary": "fabio capello is refusing to get carried away",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-2": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-l": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                }
+            }
+        ]
+    },
+    "20": {
+        "Generated_Summary": "a former gulf breeze police officer is being arrested",
+        "Original_Text": "a former gulf breeze police officer is being arrested this morning on sexual battery and unlawful compensation charges according to gulf breeze deputy chief of police robert randle",
+        "Orignal_Summary": "a former gulf breeze police officer is being arrested",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-2": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-l": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                }
+            }
+        ]
+    },
+    "21": {
+        "Generated_Summary": "an abilene teenager was killed early sunday in a wreck",
+        "Original_Text": "an abilene teenager was killed early sunday in a onecar wreck just east of chapman",
+        "Orignal_Summary": "an abilene teenager was killed early sunday in a wreck",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-2": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-l": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                }
+            }
+        ]
+    }
+}

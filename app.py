@@ -41,22 +41,24 @@ def index():
         expected_summary = ""
 
         # try:
-        input_text = request.form['input_text']
-        expected_summary = request.form['expected_summary']
+        input_text = request.form['input_text'].strip()
+        expected_summary = request.form['expected_summary'].strip()
         
         summary = su.get_summary(input_text)
 
         if expected_summary is not None and len(expected_summary) > 0:
             flag = su.update_model(input_text,expected_summary)
 
-        print("Summary: ",summary)
-        
         # except:
         #     summary = sys.exc_info()
 
         UserData["input_text"] = input_text
         UserData['expected_summary'] = expected_summary
         UserData['summary'] = summary
+
+        print("Input text {}".format(input_text))
+        print("Expected summary text {}".format(expected_summary))
+        print("Summary text {}".format(summary))
 
     return render_template('index.html', **UserData)
 

@@ -5,7 +5,7 @@ class Lang:
         self.name = name  
         self.word2index,self.word2count,self.index2word = {},{},{}
         self.index2word = {SOS_token: "SOS", EOS_token: "EOS", UNK_token:"UNK"}
-        self.n_words = 3  # Count SOS and EOS and UNK
+        self.n_words = 3
 
     def addSentence(self, sentence):
         for word in sentence.split(' '):

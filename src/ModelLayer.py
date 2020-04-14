@@ -4,6 +4,7 @@ from Decoder import  *
 from Encoder import  *
 from packages import *
 from data_processing import *
+from train import *
 
 class ModelLayer:
 
@@ -72,9 +73,9 @@ class ModelLayer:
 	def load_models_params(self):
 
 		CWD = os.getcwd()
-		params_path = CWD + "/config/params_2.json"
+		self.params_path = CWD + "/config/params_2.json"
 
-		self.params = load_data(params_path)
+		self.params = load_data(self.params_path)
 		self.EPOCHS = self.params["EPOCHS"]
 		self.DROPOUT = self.params["DROPOUT"]
 		self.MAX_TRAIN_LOSS = self.params["MAX_TRAIN_LOSS"]
@@ -101,43 +102,59 @@ class ModelLayer:
 
 		model_folder_path = CWD + "/model/" + model_name
 
-		encoder_path = "{}/{}_Encoder.pt".format(model_folder_path,model_name)
-		decoder_path = "{}/{}_Decoder.pt".format(model_folder_path,model_name)
+		self.encoder_path = "{}/{}_Encoder.pt".format(model_folder_path,model_name)
+		self.decoder_path = "{}/{}_Decoder.pt".format(model_folder_path,model_name)
 		params_path = "{}/{}_params.pt".format(model_folder_path,model_name)
-		vocab_path = "{}/{}_vocab.pt".format(model_folder_path,model_name)
+		self.vocab_path = "{}/{}_vocab.pt".format(model_folder_path,model_name)
 
-		print("Encoder Model Path :" ,encoder_path)
-		print("Decoder Model Path :" ,decoder_path)
+		print("Encoder Model Path :" ,self.encoder_path)
+		print("Decoder Model Path :" ,self.decoder_path)
 		print("Params Path :" ,params_path)
-		print("Vocab Path :" ,vocab_path)
+		print("Vocab Path :" ,self.vocab_path)
 
-		print("Encoder Model Exist " ,os.path.isfile(encoder_path))
-		print("Decoder Model Exist " ,os.path.isfile(decoder_path))
+		print("Encoder Model Exist " ,os.path.isfile(self.encoder_path))
+		print("Decoder Model Exist " ,os.path.isfile(self.decoder_path))
 		print("Params File Exist " ,os.path.isfile(params_path))
-		print("Vocab File Exist " ,os.path.isfile(vocab_path))
+		print("Vocab File Exist " ,os.path.isfile(self.vocab_path))
 		
-		if os.path.isfile(encoder_path) == False \
-			or os.path.isfile(decoder_path) == False \
+		if os.path.isfile(self.encoder_path) == False \
+			or os.path.isfile(self.decoder_path) == False \
 	        or os.path.isfile(params_path) == False \
-	        or os.path.isfile(vocab_path) == False:
+	        or os.path.isfile(self.vocab_path) == False:
 	        	print("Model does not exists. Cannot generate summary")
 	        	return 0
 
-		vocab = self.load_obj(vocab_path)
-		self.input_lang = vocab["input_lang"]
-		self.output_lang = vocab["output_lang"]
-		self.encoder_model = self.load_saved_encoder(encoder_path)
-		self.decoder_model = self.load_saved_decoder(decoder_path)
+		self.vocab = self.load_obj(self.vocab_path)
+		self.input_lang = self.vocab["input_lang"]
+		self.output_lang = self.vocab["output_lang"]
+		self.encoder_model = self.load_saved_encoder(self.encoder_path)
+		self.decoder_model = self.load_saved_decoder(self.decoder_path)
 
 
 	def perform_summarization(self,input_text):
 
 		input_text = process_text(input_text,self.contraction_mapping)
-	
 		summary = self.get_summary(input_text)
-
 		data = {}
 		data["summary"] = summary
-
 		return data
-		
+
+	def perform_update(self,input_txt,output_txt):
+		try:
+			pair = [[input_txt,output_txt]]
+			trainer = Train(self.params_path)
+			# self.input_lang.addSentence(input_txt)
+			# self.output_lang.addSentence(output_txt)
+			plot_losses,no_of_epoch = trainer.trainIters(pair,self.input_lang,
+							self.output_lang,self.encoder_model,self.decoder_model)
+			
+			# self.vocab = {"input_lang":self.input_lang,"output_lang":self.output_lang}
+			torch.save(self.vocab, self.vocab_path)
+			torch.save(self.encoder_model.state_dict(), self.encoder_path)
+			torch.save(self.decoder_model.state_dict(), self.decoder_path)
+			print(plot_losses)
+			print(no_of_epoch)
+			return True
+		except Exception as e:
+			print(e)
+			return False

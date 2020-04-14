@@ -1,0 +1,506 @@
+{
+    "1": {
+        "Generated_Summary": "five people have been taken to hospital with minor injuries following a crash the car with angela",
+        "Original_Text": "five people have been taken to hospital with minor injuries following a crash on the a17 near sleaford this morning",
+        "Orignal_Summary": "five people have been taken to hospital with minor injuries following a crash on the a17 near sleaford",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.7777777727777778,
+                    "p": 0.7777777777777778,
+                    "r": 0.7777777777777778
+                },
+                "rouge-2": {
+                    "f": 0.7058823479411767,
+                    "p": 0.7058823529411765,
+                    "r": 0.7058823529411765
+                },
+                "rouge-l": {
+                    "f": 0.7999999950040816,
+                    "p": 0.8235294117647058,
+                    "r": 0.7777777777777778
+                }
+            }
+        ]
+    },
+    "2": {
+        "Generated_Summary": "a former gulf breeze police officer is being arrested",
+        "Original_Text": "several school districts in hampton roads are holding classes this presidents day to make up for days missed because of the snow",
+        "Orignal_Summary": "several school districts are holding classes this presidents day to make up for days missed",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                }
+            }
+        ]
+    },
+    "3": {
+        "Generated_Summary": "a woman was injured by a company",
+        "Original_Text": "luis suarez was spotted in london this afternoon and this has led the daily star to link the liverpool striker to a potential move to chelsea or arsenal",
+        "Orignal_Summary": "luis suarez was spotted in london",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.1538461488757398,
+                    "p": 0.14285714285714285,
+                    "r": 0.16666666666666666
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.16666666166666683,
+                    "p": 0.16666666666666666,
+                    "r": 0.16666666666666666
+                }
+            }
+        ]
+    },
+    "4": {
+        "Generated_Summary": "a woman was injured by a company",
+        "Original_Text": "a woman was injured by a falling tree in the gresham neighborhood according to the chicago fire department",
+        "Orignal_Summary": "a woman was injured by a falling tree",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.749999995,
+                    "p": 0.75,
+                    "r": 0.75
+                },
+                "rouge-2": {
+                    "f": 0.7142857092857143,
+                    "p": 0.7142857142857143,
+                    "r": 0.7142857142857143
+                },
+                "rouge-l": {
+                    "f": 0.7142857092857143,
+                    "p": 0.7142857142857143,
+                    "r": 0.7142857142857143
+                }
+            }
+        ]
+    },
+    "5": {
+        "Generated_Summary": "foundation for metrowest has awarded 55000 in grants to a 1 1 draw in serie a",
+        "Original_Text": "birmingham poet benjamin zephaniah is today leading an interactive poetry day for exoffenders in birmingham",
+        "Orignal_Summary": "benjamin zephaniah is today leading an poetry day for exoffenders",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.07407406924554216,
+                    "p": 0.0625,
+                    "r": 0.09090909090909091
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.08333332836805586,
+                    "p": 0.07692307692307693,
+                    "r": 0.09090909090909091
+                }
+            }
+        ]
+    },
+    "6": {
+        "Generated_Summary": "foundation for metrowest has awarded 55000 in grants to a 1 1 draw in serie a",
+        "Original_Text": "british mobile phone giant vodafone said tuesday it was seeking regulatory approval to take full control of its indian unit for 1 65 billion after new delhi relaxed foreign ownership rules in the sector",
+        "Orignal_Summary": "vodafone said it was seeking regulatory approval to take full control of its indian unit",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.06249999501953165,
+                    "p": 0.058823529411764705,
+                    "r": 0.06666666666666667
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.06896551224732497,
+                    "p": 0.07142857142857142,
+                    "r": 0.06666666666666667
+                }
+            }
+        ]
+    },
+    "7": {
+        "Generated_Summary": "markets continued to remain under pressure",
+        "Original_Text": "markets continued to remain under pressure on thursday morning as financial heavyweights like icici bank hdfc and hdfc bank declined by 12 each",
+        "Orignal_Summary": "markets continued to remain under pressure",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-2": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                },
+                "rouge-l": {
+                    "f": 0.999999995,
+                    "p": 1.0,
+                    "r": 1.0
+                }
+            }
+        ]
+    },
+    "8": {
+        "Generated_Summary": "markets continued to remain under pressure",
+        "Original_Text": "rick riordan has revealed the cover for his latest crossover short story staff of serapis which features annabeth chase and sadie kane",
+        "Orignal_Summary": "rick riordan has revealed the cover for his story staff of serapis",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                }
+            }
+        ]
+    },
+    "9": {
+        "Generated_Summary": "a woman was injured by a company",
+        "Original_Text": "ukraine accused russia saturday of sending thousands of extra troops into crimea as the kremlin vowed to help restore calm on the flashpoint peninsula and washington warned of costs to moscow should it use force",
+        "Orignal_Summary": "ukraine accused russia of sending thousands of troops into crimea",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                }
+            }
+        ]
+    },
+    "10": {
+        "Generated_Summary": "markets continued to remain under pressure",
+        "Original_Text": "a man charged with killing his father in a fight outside a busy orlando restaurant was just cleared by a grand jury",
+        "Orignal_Summary": "a man charged with killing his father was cleared by a grand jury",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                }
+            }
+        ]
+    },
+    "11": {
+        "Generated_Summary": "a woman was injured by a company",
+        "Original_Text": "a new wave of attacks across iraq killed at least 20 people and wounded dozens on monday as the government pressed on with its offensive to hunt down alqaidalinked militants in the countrys volatile western desert",
+        "Orignal_Summary": "a wave of attacks across iraq killed at least 20 people",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.1052631530193908,
+                    "p": 0.125,
+                    "r": 0.09090909090909091
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.11111110635802489,
+                    "p": 0.14285714285714285,
+                    "r": 0.09090909090909091
+                }
+            }
+        ]
+    },
+    "12": {
+        "Generated_Summary": "a former gulf breeze police officer is being arrested",
+        "Original_Text": "new zealand shares fell for a third session as institutional investors reweighted their portfolios ahead of changes to the market index next week",
+        "Orignal_Summary": "new zealand shares fell for a third session",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.11111110611111134,
+                    "p": 0.1111111111111111,
+                    "r": 0.1111111111111111
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.11111110611111134,
+                    "p": 0.1111111111111111,
+                    "r": 0.1111111111111111
+                }
+            }
+        ]
+    },
+    "13": {
+        "Generated_Summary": "markets continued to remain under pressure",
+        "Original_Text": "at a ceremony held in charlotte nc monday night pitt defensive tackle aaron donald won the 2013 bronko nagurski trophy",
+        "Orignal_Summary": "aaron donald won the 2013 bronko nagurski trophy",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                }
+            }
+        ]
+    },
+    "14": {
+        "Generated_Summary": "markets continued to remain under pressure",
+        "Original_Text": "one in four men admitted raping a woman once in their life according to a report from united nations",
+        "Orignal_Summary": "one in four men admitted raping a woman",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                }
+            }
+        ]
+    },
+    "15": {
+        "Generated_Summary": "a former gulf breeze police officer is being arrested",
+        "Original_Text": "deputy prime minister dmitry kozak in charge of the governments olympic preparations told an ioc conference in sochi wednesday that russia was fully compensating for any environmental effects of the games",
+        "Orignal_Summary": "russia was fully compensating for any environmental effects of the games",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                }
+            }
+        ]
+    },
+    "16": {
+        "Generated_Summary": "jordan and south korea have pledged to cooperate on regulatory",
+        "Original_Text": "oil gas giant cairn energy plc in its preclose update said that it plans to drill nine wells in its 2014 exploration programme across an attractive mix of frontier and mature basins",
+        "Orignal_Summary": "cairn energy plc plans to drill nine wells in its 2014 exploration programme",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.08333332836805586,
+                    "p": 0.09090909090909091,
+                    "r": 0.07692307692307693
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.08333332836805586,
+                    "p": 0.09090909090909091,
+                    "r": 0.07692307692307693
+                }
+            }
+        ]
+    },
+    "17": {
+        "Generated_Summary": "an abilene teenager was killed early sunday in a wreck",
+        "Original_Text": "three members of a family were hacked to death over a land dispute between two groups of people in garhaiwadi village of bihars kishanganj district police said",
+        "Orignal_Summary": "three members were hacked to death over a land dispute",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.09999999500000027,
+                    "p": 0.1,
+                    "r": 0.1
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.09999999500000027,
+                    "p": 0.1,
+                    "r": 0.1
+                }
+            }
+        ]
+    },
+    "18": {
+        "Generated_Summary": "markets continued to remain under pressure",
+        "Original_Text": "mclean va dec 23 2013 prnewswire gannett co inc announced today that it has completed its previously announced acquisition of belo corp for 13 75 per share in cash in addition to the assumption of 715 million of outstanding debt for a total transaction value of 2 2 billion",
+        "Orignal_Summary": "gannett co inc has completed its acquisition of belo corp",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                }
+            }
+        ]
+    },
+    "19": {
+        "Generated_Summary": "a former gulf breeze police officer is being arrested",
+        "Original_Text": "sochi russia us champion jeremy abbott fell hard on an attempted quadruple toe loop thursday in the mens short program at the olympics yet finished the routine",
+        "Orignal_Summary": "us champion jeremy abbott fell hard in the mens short program",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                }
+            }
+        ]
+    },
+    "20": {
+        "Generated_Summary": "markets continued to remain under pressure",
+        "Original_Text": "long time lgbtq ally and activist multigrammy awardnominated twotime emmy awardwinning comedian and 1 new york times bestselling author kathy griffin will host trevorlive in los angeles on december 8th at the hollywood palladium presented by audi of america and wells fargo",
+        "Orignal_Summary": "comedian kathy griffin will host trevorlive",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                }
+            }
+        ]
+    },
+    "21": {
+        "Generated_Summary": "a woman was injured by a company",
+        "Original_Text": "the australian treasury believes positive signs are emerging in the australian economy",
+        "Orignal_Summary": "positive signs are emerging",
+        "Score": [
+            {
+                "rouge-1": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-2": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                },
+                "rouge-l": {
+                    "f": 0.0,
+                    "p": 0.0,
+                    "r": 0.0
+                }
+            }
+        ]
+    }
+}

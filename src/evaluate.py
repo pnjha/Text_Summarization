@@ -31,41 +31,91 @@ class Evaluate():
         encoder.eval()
         decoder.eval()
         max_length = self.MAX_LENGTH
+        
         with torch.no_grad():
+        
             input_tensor = tensorFromSentence(input_lang, sentence, device, self.EOS_TOKEN, self.UNK_TOKEN)
             input_length = input_tensor.size()[0]
-            encoder_hidden = encoder.initHidden()
 
-            encoder_outputs = torch.zeros(max_length, encoder.hidden_size, device=device)
+            encoder_hidden_forward = encoder.initHidden()
+            encoder_hidden_backward = encoder.initHidden()
+
+            encoder_outputs_forward = torch.zeros(max_length, encoder.hidden_size, device=device)
+            encoder_outputs_backward = torch.zeros(max_length, encoder.hidden_size, device=device)
 
             for ei in range(input_length):
-                encoder_output, encoder_hidden = encoder(input_tensor[ei],encoder_hidden)
-                encoder_outputs[ei] += encoder_output[0, 0]
+                encoder_output_forward, encoder_hidden_forward = encoder(input_tensor[ei],encoder_hidden_forward,True)
+                encoder_outputs_forward[ei] += encoder_output_forward[0, 0]
 
-            decoder_input = torch.tensor([[self.SOS_TOKEN]], device=device)  # SOS
+            for ei in range(input_length-1,-1,-1):
+                encoder_output_backward, encoder_hidden_backward = encoder(input_tensor[ei], encoder_hidden_backward,False)
+                encoder_outputs_backward[ei] = encoder_output_backward[0, 0]
 
-            decoder_hidden = encoder_hidden
+            decoder_input_forward = torch.tensor([[self.SOS_TOKEN]], device=device)  # SOS
+            decoder_input_backward = torch.tensor([[self.EOS_TOKEN]], device=device)  # SOS
 
+            decoder_hidden_forward = encoder_hidden_backward
+            decoder_hidden_backward = encoder_hidden_forward
+
+            forward_flag = True
+            backward_flag = True
             decoded_words = []
-            decoder_attentions = torch.zeros(max_length, max_length)
+            decoder_output = []
+            decoder_output_forward_list = []
+            decoder_output_backward_list = []
+                       
+            # decoder_attentions_forward = torch.zeros(max_length, max_length)
+            # decoder_attentions_backward = torch.zeros(max_length, max_length)
+            # decoder_attentions[di] = decoder_attention.data
 
             for di in range(max_length):
 
-                decoder_output, decoder_hidden, decoder_attention = decoder(decoder_input, decoder_hidden, encoder_outputs)
-                decoder_attentions[di] = decoder_attention.data
+                if forward_flag:
+                    decoder_output_forward, decoder_hidden_forward, decoder_attention_forward = decoder(decoder_input_forward, decoder_hidden_forward, encoder_outputs_backward,True)
+                    decoder_output_forward_list.append(decoder_output_forward)
+                    topv, topi = decoder_output_forward.data.topk(1)
+                    decoder_input_forward = topi.squeeze().detach()
+                    if topi.item() == self.EOS_TOKEN:
+                        forward_flag = False                    
+                
+                if backward_flag:
+                    decoder_output_backward, decoder_hidden_backward, decoder_attention_backward = decoder(decoder_input_backward, decoder_hidden_backward, encoder_outputs_forward,True)
+                    decoder_output_backward_list.append(decoder_output_backward)
+                    topv, topi = decoder_output_backward.data.topk(1)
+                    decoder_input_backward = topi.squeeze().detach()
+                    if topi.item() == self.SOS_TOKEN:
+                        backward_flag = False
+                
+                if forward_flag == False and backward_flag == False:
+                    break
 
-                topv, topi = decoder_output.data.topk(1)
+            decoder_output_backward_list = decoder_output_backward_list[::-1]
+
+            for i in range(min(len(decoder_output_backward_list), len(decoder_output_forward_list))):
+                decoder_output.append(decoder_output_backward_list[i] + decoder_output_forward_list[i])
+
+            if len(decoder_output_backward_list) < len(decoder_output_forward_list):
+                for i in range(len(decoder_output_backward_list)-1,len(decoder_output_forward_list)):
+                    decoder_output.append(decoder_output_forward_list[i])
+            
+            elif len(decoder_output_backward_list) > len(decoder_output_forward_list):                     
+                for i in range(len(decoder_output_forward_list)-1,len(decoder_output_backward_list)):
+                    decoder_output.append(decoder_output_backward_list[i])
+
+            for i in range(len(decoder_output)):
+                topv, topi = decoder_output[i].data.topk(1)
                 if topi.item() == self.UNK_TOKEN:
                     decoded_words.append('<UNK>')
-                if topi.item() == self.EOS_TOKEN:
-                    decoded_words.append('<EOS>')
-                    break
                 else:
-                    decoded_words.append(output_lang.index2word[topi.item()])
+                    if topi.item() == self.EOS_TOKEN:
+                        decoded_words.append('<EOS>')
+                        break
+                    else:
+                        decoded_words.append(output_lang.index2word[topi.item()])
 
-                decoder_input = topi.squeeze().detach()
 
-            return decoded_words, decoder_attentions[:di + 1]
+            # return decoded_words, decoder_attentions[:di + 1]
+            return decoded_words
 
     def load_saved_encoder(self,input_lang,encoder_model_path):
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -109,7 +159,8 @@ class Evaluate():
 
         for pair in pairs:
             
-            output_words, attentions = self.evaluate(encoder, decoder, pair[0], input_lang, output_lang)
+            # output_words, attentions = self.evaluate(encoder, decoder, pair[0], input_lang, output_lang)
+            output_words = self.evaluate(encoder, decoder, pair[0], input_lang, output_lang)
             output_sentence = ' '.join(output_words)
 
             reference = [pair[1].split()]

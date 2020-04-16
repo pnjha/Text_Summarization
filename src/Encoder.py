@@ -5,12 +5,16 @@ class EncoderRNN(nn.Module):
         super(EncoderRNN, self).__init__()
         self.hidden_size = hidden_size
         self.embedding = nn.Embedding(input_size, hidden_size)
-        self.gru = nn.GRU(hidden_size, hidden_size)
+        self.gru_forward = nn.GRU(hidden_size, hidden_size)
+        self.gru_backward = nn.GRU(hidden_size, hidden_size)
 
-    def forward(self, input, hidden):
+    def forward(self, input, hidden, flag):
         embedded = self.embedding(input).view(1, 1, -1)
         output = embedded
-        output, hidden = self.gru(output, hidden)
+        if flag:
+            output, hidden = self.gru_forward(output, hidden)
+        else:
+            output, hidden = self.gru_backward(output, hidden)
         return output, hidden
 
     def initHidden(self):

@@ -8,9 +8,10 @@
     "DROPOUT": 0.1,
     "EPOCHS": 30,
     "LEARNING_RATE": 0.01,
-    "MAX_TRAIN_LOSS": 0.1,
-    "LAYERS": 5,
+    "MAX_TRAIN_LOSS": 0.8,
+    "LAYERS": 1,
     "HIDDEN_SIZE": 256,
     "MAX_GRADIENT": 100,
     "TEACHER_FORCING_RATE": 0.5
 }
+    

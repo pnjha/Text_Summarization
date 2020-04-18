@@ -112,7 +112,7 @@ class Train():
 
         return loss.item() / target_length
 
-    def trainIters(self,pairs,input_lang,output_lang, encoder, decoder):
+    def trainIters(self,pairs,input_lang,output_lang, encoder, decoder, encoder_path, decoder_path):
     
         start_training = time.time()
         plot_losses = []
@@ -146,6 +146,9 @@ class Train():
             no_of_epoch.append(i+1)
             if loss < self.MAX_TRAIN_LOSS:
                 break
+
+            torch.save(encoder.state_dict(), encoder_path)
+            torch.save(decoder.state_dict(), decoder_path)
 
         end_training = time.time()
         print("Total time taken for training: %.5f",as_minutes(start_training - end_training))    
@@ -219,19 +222,20 @@ def main():
     params = None
     vocab = None
 
+    vocab = {'input_lang':input_lang, 'output_lang':output_lang}
+    torch.save(trainer.params, params_path)
+    torch.save(vocab, vocab_path)
+
     encoder_model = EncoderRNN(input_lang.n_words, trainer.HIDDEN_SIZE,trainer.LAYERS).to(device)
     decoder_model = AttnDecoderRNN(trainer.HIDDEN_SIZE, output_lang.n_words,trainer.DROPOUT,trainer.MAX_LENGTH,trainer.LAYERS).to(device)
-    plot_losses,no_of_epoch = trainer.trainIters(pairs,input_lang,output_lang,encoder_model, decoder_model)
+    plot_losses,no_of_epoch = trainer.trainIters(pairs,input_lang,output_lang,encoder_model, decoder_model,encoder_path,decoder_path)
     
-    vocab = {'input_lang':input_lang, 'output_lang':output_lang}
 
     # trainer.save_model(encoder_model,decoder_model,trainer.params,vocab,
     #                    encoder_path,decoder_path,params_path,vocab_path)
 
     torch.save(encoder_model.state_dict(), encoder_path)
     torch.save(decoder_model.state_dict(), decoder_path)
-    torch.save(trainer.params, params_path)
-    torch.save(vocab, vocab_path)
     
     show_plot(no_of_epoch,plot_losses,plot_path)
 

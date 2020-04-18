@@ -219,8 +219,8 @@ def main():
     params = None
     vocab = None
 
-    encoder_model = EncoderRNN(input_lang.n_words, trainer.HIDDEN_SIZE).to(device)
-    decoder_model = AttnDecoderRNN(trainer.HIDDEN_SIZE, output_lang.n_words,trainer.DROPOUT,trainer.MAX_LENGTH).to(device)
+    encoder_model = EncoderRNN(input_lang.n_words, trainer.HIDDEN_SIZE,trainer.LAYERS).to(device)
+    decoder_model = AttnDecoderRNN(trainer.HIDDEN_SIZE, output_lang.n_words,trainer.DROPOUT,trainer.MAX_LENGTH,trainer.LAYERS).to(device)
     plot_losses,no_of_epoch = trainer.trainIters(pairs,input_lang,output_lang,encoder_model, decoder_model)
     
     vocab = {'input_lang':input_lang, 'output_lang':output_lang}

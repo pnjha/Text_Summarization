@@ -119,13 +119,13 @@ class Evaluate():
 
     def load_saved_encoder(self,input_lang,encoder_model_path):
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        encoder_model = EncoderRNN(input_lang.n_words, self.HIDDEN_SIZE).to(device)
+        encoder_model = EncoderRNN(input_lang.n_words, self.HIDDEN_SIZE,self.LAYERS).to(device)
         encoder_model.load_state_dict(torch.load(encoder_model_path, map_location=device))
         return encoder_model
 
     def load_saved_decoder(self,output_lang,decoder_model_path):
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        decoder_model = AttnDecoderRNN(self.HIDDEN_SIZE,output_lang.n_words,self.DROPOUT,self.MAX_LENGTH).to(device)
+        decoder_model = AttnDecoderRNN(self.HIDDEN_SIZE,output_lang.n_words,self.DROPOUT,self.MAX_LENGTH,self.LAYERS).to(device)
         decoder_model.load_state_dict(torch.load(decoder_model_path, map_location=device))
         return decoder_model
 

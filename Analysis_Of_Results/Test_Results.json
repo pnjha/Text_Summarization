@@ -1,0 +1,487 @@
+{
+    "Ep_250_Ds_10000_Lr_0.001_Hs_256_Ml_0.5_Tf_0.5_GR_100_test_result.json": {
+        "1417": {
+            "Original": "the ringgit closed lower against the us dollar",
+            "Predicted": "the ringgit closed lower against the us dollar",
+            "Ratio": 100
+        },
+        "1694": {
+            "Original": "european stocks closed",
+            "Predicted": "european stocks closed",
+            "Ratio": 100
+        },
+        "1979": {
+            "Original": "chris brown is set to return to los angeles",
+            "Predicted": "chris brown is set to return to glee",
+            "Ratio": 89
+        },
+        "2147": {
+            "Original": "the ringgit closed lower against the us dollar",
+            "Predicted": "the ringgit closed lower against the us dollar",
+            "Ratio": 100
+        },
+        "2610": {
+            "Original": "the australian market looks set to open higher",
+            "Predicted": "the australian market set to open up",
+            "Ratio": 83
+        },
+        "2643": {
+            "Original": "three men were arrested after a fight",
+            "Predicted": "three men were arrested after taking a",
+            "Ratio": 83
+        },
+        "2889": {
+            "Original": "sbarro inc filed for bankruptcy protection",
+            "Predicted": "chris inc has filed for bankruptcy protection on",
+            "Ratio": 82
+        },
+        "290": {
+            "Original": "the australian market is trading flat",
+            "Predicted": "the australian market is trading weak",
+            "Ratio": 92
+        },
+        "3037": {
+            "Original": "three people were hospitalized after a crash",
+            "Predicted": "three people were hospitalized after a shootout",
+            "Ratio": 90
+        },
+        "3132": {
+            "Original": "the australian share market is trading higher",
+            "Predicted": "the australian market is trading lower",
+            "Ratio": 84
+        },
+        "3165": {
+            "Original": "samsung electronics posted a record high of profit",
+            "Predicted": "samsung electronics opened a record high of 8 week",
+            "Ratio": 82
+        },
+        "3672": {
+            "Original": "michael vick has signed with the new york jets",
+            "Predicted": "michael lohan has signed with the new york city",
+            "Ratio": 84
+        },
+        "4572": {
+            "Original": "egypt has declared a state of emergency",
+            "Predicted": "zimbabwe has declared a state ban of emergency",
+            "Ratio": 82
+        },
+        "4679": {
+            "Original": "us stocks ended mostly higher",
+            "Predicted": "us stocks ended higher",
+            "Ratio": 86
+        },
+        "4808": {
+            "Original": "oil prices edged lower in asian trade",
+            "Predicted": "oil prices edged steady in asian trade",
+            "Ratio": 88
+        },
+        "4935": {
+            "Original": "indian shares ended lower",
+            "Predicted": "indian shares ended lower",
+            "Ratio": 100
+        },
+        "5003": {
+            "Original": "asian markets ended",
+            "Predicted": "asian markets ended higher",
+            "Ratio": 84
+        },
+        "5015": {
+            "Original": "the reserve bank has cut interest rates",
+            "Predicted": "the reserve bank has cut interest rates for 4 5",
+            "Ratio": 91
+        },
+        "5356": {
+            "Original": "a man died after being struck by two cars",
+            "Predicted": "a man died after being caught by two years",
+            "Ratio": 84
+        },
+        "5497": {
+            "Original": "the us trade deficit was narrowed in june",
+            "Predicted": "the us trade deficit narrowed narrowed",
+            "Ratio": 81
+        },
+        "571": {
+            "Original": "george zimmerman has been found not guilty",
+            "Predicted": "george zimmerman has been found guilty to murder",
+            "Ratio": 84
+        },
+        "5988": {
+            "Original": "asian stocks ended broadly higher",
+            "Predicted": "asian stocks ended higher",
+            "Ratio": 86
+        },
+        "645": {
+            "Original": "christina aguilera are expecting a baby girl",
+            "Predicted": "christina aguilera are engaged a baby",
+            "Ratio": 81
+        },
+        "7114": {
+            "Original": "indian shares ended lower",
+            "Predicted": "indian shares ended lower",
+            "Ratio": 100
+        },
+        "7366": {
+            "Original": "asian stocks fell",
+            "Predicted": "asian stocks fell",
+            "Ratio": 100
+        },
+        "7457": {
+            "Original": "bradley manning was sentenced to 35 years",
+            "Predicted": "bradley manning was sentenced to 15 years in prison",
+            "Ratio": 87
+        },
+        "8221": {
+            "Original": "german stocks were little changed",
+            "Predicted": "german stocks were little stocks",
+            "Ratio": 83
+        },
+        "9657": {
+            "Original": "hong kong shares ended flat",
+            "Predicted": "hong kong shares closed flat",
+            "Ratio": 87
+        },
+        "9725": {
+            "Original": "the australian market looks set to open higher",
+            "Predicted": "the australian market set to open the open",
+            "Ratio": 82
+        }
+    },
+    "Ep_250_Ds_10000_Lr_0.01_Hs_256_Ml_0.08_Tf_0.5_GR_100_test_result.json": {
+        "1": {
+            "Original": "five people have been taken to hospital with minor injuries following a crash on the a17 near sleaford",
+            "Predicted": "five people have been taken to hospital with minor injuries following a crash on the a17 near sleaford",
+            "Ratio": 100
+        },
+        "1417": {
+            "Original": "the ringgit closed lower against the us dollar",
+            "Predicted": "the ringgit closed lower against the us dollar",
+            "Ratio": 100
+        },
+        "4": {
+            "Original": "a woman was injured by a falling tree",
+            "Predicted": "a woman was injured by a falling tree",
+            "Ratio": 100
+        },
+        "4153": {
+            "Original": "the ringgit closed unchanged against the us dollar",
+            "Predicted": "the ringgit closed closed against the us",
+            "Ratio": 82
+        },
+        "7": {
+            "Original": "markets continued to remain under pressure",
+            "Predicted": "markets continued to remain under pressure",
+            "Ratio": 100
+        },
+        "7537": {
+            "Original": "a man died in an atv crash",
+            "Predicted": "a man died in a from a crash",
+            "Ratio": 85
+        },
+        "8212": {
+            "Original": "decatur police are investigating the death",
+            "Predicted": "ahmedabad police are investigating the death",
+            "Ratio": 84
+        }
+    },
+    "Ep_250_Ds_10000_Lr_0.01_Hs_256_Ml_0.2_Tf_0.5_GR_100_test_result.json": {
+        "1": {
+            "Original": "five people have been taken to hospital with minor injuries following a crash on the a17 near sleaford",
+            "Predicted": "five people have been taken to hospital with minor injuries following a crash on crash",
+            "Ratio": 88
+        },
+        "1694": {
+            "Original": "european stocks closed",
+            "Predicted": "european stocks closed lower",
+            "Ratio": 88
+        },
+        "4": {
+            "Original": "a woman was injured by a falling tree",
+            "Predicted": "a woman was injured by a falling tree",
+            "Ratio": 100
+        },
+        "4572": {
+            "Original": "egypt has declared a state of emergency",
+            "Predicted": "obama has declared a state of emergency",
+            "Ratio": 87
+        },
+        "5624": {
+            "Original": "police are investigating a suspicious object",
+            "Predicted": "police are investigating a possible",
+            "Ratio": 81
+        },
+        "7": {
+            "Original": "markets continued to remain under pressure",
+            "Predicted": "markets continued to remain under pressure",
+            "Ratio": 100
+        },
+        "7221": {
+            "Original": "topeka police are investigating a shooting",
+            "Predicted": "police are investigating a first shooting",
+            "Ratio": 84
+        },
+        "7537": {
+            "Original": "a man died in an atv crash",
+            "Predicted": "a man died from an car crash",
+            "Ratio": 81
+        },
+        "8018": {
+            "Original": "an atlantic city police officer was injured in an atv crash",
+            "Predicted": "an police officer was injured in an car crash",
+            "Ratio": 83
+        },
+        "8059": {
+            "Original": "paul are celebrating their 60th anniversary",
+            "Predicted": "vic are celebrating their 50th anniversary",
+            "Ratio": 89
+        },
+        "9549": {
+            "Original": "grubhub inc today announced the pricing of its initial public offering",
+            "Predicted": "mela inc today announced the pricing of a public offering",
+            "Ratio": 83
+        }
+    },
+    "Ep_250_Ds_10000_Lr_0.01_Hs_256_Ml_0.3_Tf_0.5_GR_100_test_result.json": {
+        "1": {
+            "Original": "five people have been taken to hospital with minor injuries following a crash on the a17 near sleaford",
+            "Predicted": "five people have been taken to hospital with minor injuries following a crash the the the",
+            "Ratio": 88
+        },
+        "1417": {
+            "Original": "the ringgit closed lower against the us dollar",
+            "Predicted": "the ringgit closed against us dollar closed",
+            "Ratio": 81
+        },
+        "1694": {
+            "Original": "european stocks closed",
+            "Predicted": "european stocks closed lower 1",
+            "Ratio": 85
+        },
+        "2314": {
+            "Original": "a woman was killed in a motorcycle crash",
+            "Predicted": "a woman was killed in a two car",
+            "Ratio": 82
+        },
+        "4": {
+            "Original": "a woman was injured by a falling tree",
+            "Predicted": "a woman was injured by a falling tree",
+            "Ratio": 100
+        },
+        "4153": {
+            "Original": "the ringgit closed unchanged against the us dollar",
+            "Predicted": "the ringgit closed lower against the us dollar",
+            "Ratio": 88
+        },
+        "430": {
+            "Original": "a man was arrested for rape bid on a minor",
+            "Predicted": "a man was arrested for raping a rock",
+            "Ratio": 82
+        },
+        "4341": {
+            "Original": "ronald celebrated their 50th anniversary",
+            "Predicted": "vic celebrated their 50th anniversary",
+            "Ratio": 88
+        },
+        "5588": {
+            "Original": "aorato has raised 10 million",
+            "Predicted": "harvest has raised rs million",
+            "Ratio": 81
+        },
+        "7": {
+            "Original": "markets continued to remain under pressure",
+            "Predicted": "markets continued to remain under pressure",
+            "Ratio": 100
+        },
+        "7537": {
+            "Original": "a man died in an atv crash",
+            "Predicted": "a man died in a car crash",
+            "Ratio": 90
+        },
+        "9005": {
+            "Original": "danville police are investigating an attempted robbery",
+            "Predicted": "police are investigating an armed robbery",
+            "Ratio": 84
+        }
+    },
+    "Ep_250_Ds_20000_Lr_0.001_Hs_256_Ml_0.4_Tf_0.5_GR_100_test_result.json": {
+        "1492": {
+            "Original": "an east st louis man is accused of beating his daughter",
+            "Predicted": "an east st louis man is accused of assaulting after his brother",
+            "Ratio": 81
+        },
+        "2101": {
+            "Original": "fire destroyed a cotati home",
+            "Predicted": "fire destroyed a home",
+            "Ratio": 86
+        },
+        "2542": {
+            "Original": "vybz kartel was sentenced to life in prison",
+            "Predicted": "how rock was sentenced to life in prison",
+            "Ratio": 82
+        },
+        "290": {
+            "Original": "the australian market is trading flat",
+            "Predicted": "the australian market is trading",
+            "Ratio": 93
+        },
+        "3037": {
+            "Original": "three people were hospitalized after a crash",
+            "Predicted": "three people were hospitalized after a crash with a truck left",
+            "Ratio": 83
+        },
+        "3132": {
+            "Original": "the australian share market is trading higher",
+            "Predicted": "the australian market is trading higher",
+            "Ratio": 93
+        },
+        "3138": {
+            "Original": "two children were burnt to death",
+            "Predicted": "two students were burnt to death",
+            "Ratio": 84
+        },
+        "3165": {
+            "Original": "samsung electronics posted a record high of profit",
+            "Predicted": "samsung electronics posted a record profit",
+            "Ratio": 91
+        },
+        "341": {
+            "Original": "a burn ban was lifted",
+            "Predicted": "a burn ban was captured",
+            "Ratio": 82
+        },
+        "3492": {
+            "Original": "george zimmerman has been found not guilty",
+            "Predicted": "george zimmerman has been found guilty",
+            "Ratio": 95
+        },
+        "3624": {
+            "Original": "taiwan stocks rose",
+            "Predicted": "taiwan stocks rose",
+            "Ratio": 100
+        },
+        "3729": {
+            "Original": "taiwan stocks were flat",
+            "Predicted": "taiwan stocks were little",
+            "Ratio": 88
+        },
+        "4217": {
+            "Original": "qantas airways has increased its stake in jetstar japan",
+            "Predicted": "qantas airways has increased its stake in to to to",
+            "Ratio": 84
+        },
+        "4339": {
+            "Original": "a trufant man has been charged with drug possession",
+            "Predicted": "a man man has been charged with drug possession in an assault",
+            "Ratio": 82
+        },
+        "4534": {
+            "Original": "wade redden announced his retirement",
+            "Predicted": "kanye cricket announced his retirement",
+            "Ratio": 81
+        },
+        "4693": {
+            "Original": "a police cruiser was involved in a crash",
+            "Predicted": "a police officer was involved in a crash",
+            "Ratio": 90
+        },
+        "4847": {
+            "Original": "a police officer was injured while responding to an accident",
+            "Predicted": "a police officer was injured in an an accident",
+            "Ratio": 83
+        },
+        "4935": {
+            "Original": "indian shares ended lower",
+            "Predicted": "indian shares ended lower",
+            "Ratio": 100
+        },
+        "5003": {
+            "Original": "asian markets ended",
+            "Predicted": "asian markets ended lower",
+            "Ratio": 86
+        },
+        "5015": {
+            "Original": "the reserve bank has cut interest rates",
+            "Predicted": "the reserve bank has cut rates work",
+            "Ratio": 81
+        },
+        "5318": {
+            "Original": "the us trade deficit widened slightly",
+            "Predicted": "the us trade deficit widened",
+            "Ratio": 86
+        },
+        "5535": {
+            "Original": "a golden gate man is accused of having sex with a minor",
+            "Predicted": "a golden gate man is accused of having sex sex",
+            "Ratio": 85
+        },
+        "5587": {
+            "Original": "a man has been charged with gross sexual assault",
+            "Predicted": "a sexual man has been charged with sexual assault",
+            "Ratio": 87
+        },
+        "5988": {
+            "Original": "asian stocks ended broadly higher",
+            "Predicted": "asian stocks ended higher",
+            "Ratio": 86
+        },
+        "645": {
+            "Original": "christina aguilera are expecting a baby girl",
+            "Predicted": "christina aguilera are expecting a new york",
+            "Ratio": 85
+        },
+        "6934": {
+            "Original": "indian shares ended flat tuesday",
+            "Predicted": "indian shares ended flat",
+            "Ratio": 86
+        },
+        "6995": {
+            "Original": "police are investigating a suspicious death in silverton",
+            "Predicted": "police are investigating a suspicious death death",
+            "Ratio": 88
+        },
+        "7114": {
+            "Original": "indian shares ended lower",
+            "Predicted": "indian shares ended lower tuesday",
+            "Ratio": 86
+        },
+        "7221": {
+            "Original": "topeka police are investigating a shooting",
+            "Predicted": "topeka police are investigating a possible",
+            "Ratio": 86
+        },
+        "7243": {
+            "Original": "a police officer was involved in a wrong way crash",
+            "Predicted": "a police officer was involved in a car crash",
+            "Ratio": 89
+        },
+        "7368": {
+            "Original": "george zimmerman was arrested on domestic violence charges",
+            "Predicted": "george zimmerman was arrested on domestic driving",
+            "Ratio": 86
+        },
+        "7431": {
+            "Original": "more than 1000 people were killed in iraq in january",
+            "Predicted": "more than 19 people were killed in srinagar",
+            "Ratio": 84
+        },
+        "7544": {
+            "Original": "a woman was arrested after she stabbed her boyfriend",
+            "Predicted": "a woman was arrested after she stabbed in the head",
+            "Ratio": 86
+        },
+        "7981": {
+            "Original": "nelson mandela rose up again",
+            "Predicted": "nelson mandela rose 11 3",
+            "Ratio": 81
+        },
+        "8080": {
+            "Original": "us home prices rose in february",
+            "Predicted": "us home prices remained 0 1 in february",
+            "Ratio": 83
+        },
+        "861": {
+            "Original": "iraqi forces killed six alqaeda militants",
+            "Predicted": "iraqi forces killed fired militants",
+            "Ratio": 87
+        }
+    }
+}

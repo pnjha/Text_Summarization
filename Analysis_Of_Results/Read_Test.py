@@ -41,7 +41,7 @@ metric_data = {}
 def similarity(file_name,index,st_1,st_2):
 	ratio = fuzz.ratio(st_1.lower(),st_2.lower())
 
-	if ratio<=80:
+	if ratio<=80 or ratio>=98:
 		return
 
 	if file_name not in statement_data.keys(): 
@@ -98,7 +98,7 @@ def processJson(item,json_data):
 
 		similarity(item,key,json_data[key]['Generated_Summary'],json_data[key]['Orignal_Summary'])
 	
-	metric_data[key] = {}
+	metric_data[item] = {}
 
 	items_data_key = {'lst_rouge_1_f':lst_rouge_1_f,'lst_rouge_1_p':lst_rouge_1_p,'lst_rouge_1_r':lst_rouge_1_r,\
 			  'lst_rouge_2_f':lst_rouge_2_f,'lst_rouge_2_p':lst_rouge_2_p,'lst_rouge_2_r':lst_rouge_2_r,\
@@ -124,7 +124,7 @@ def processJson(item,json_data):
 	for _item_,_value_ in items_data_key.items():
 		variable = get_avg(_value_)
 		print(_item_," ",variable)
-		metric_data[key][_item_] = variable
+		metric_data[item][_item_] = variable
 		
 
 	'''

@@ -1,24 +1,9 @@
 {
     "Ep_250_Ds_10000_Lr_0.001_Hs_256_Ml_0.5_Tf_0.5_GR_100_test_result.json": {
-        "1417": {
-            "Original": "the ringgit closed lower against the us dollar",
-            "Predicted": "the ringgit closed lower against the us dollar",
-            "Ratio": 100
-        },
-        "1694": {
-            "Original": "european stocks closed",
-            "Predicted": "european stocks closed",
-            "Ratio": 100
-        },
         "1979": {
             "Original": "chris brown is set to return to los angeles",
             "Predicted": "chris brown is set to return to glee",
             "Ratio": 89
-        },
-        "2147": {
-            "Original": "the ringgit closed lower against the us dollar",
-            "Predicted": "the ringgit closed lower against the us dollar",
-            "Ratio": 100
         },
         "2610": {
             "Original": "the australian market looks set to open higher",
@@ -75,11 +60,6 @@
             "Predicted": "oil prices edged steady in asian trade",
             "Ratio": 88
         },
-        "4935": {
-            "Original": "indian shares ended lower",
-            "Predicted": "indian shares ended lower",
-            "Ratio": 100
-        },
         "5003": {
             "Original": "asian markets ended",
             "Predicted": "asian markets ended higher",
@@ -115,16 +95,6 @@
             "Predicted": "christina aguilera are engaged a baby",
             "Ratio": 81
         },
-        "7114": {
-            "Original": "indian shares ended lower",
-            "Predicted": "indian shares ended lower",
-            "Ratio": 100
-        },
-        "7366": {
-            "Original": "asian stocks fell",
-            "Predicted": "asian stocks fell",
-            "Ratio": 100
-        },
         "7457": {
             "Original": "bradley manning was sentenced to 35 years",
             "Predicted": "bradley manning was sentenced to 15 years in prison",
@@ -147,30 +117,10 @@
         }
     },
     "Ep_250_Ds_10000_Lr_0.01_Hs_256_Ml_0.08_Tf_0.5_GR_100_test_result.json": {
-        "1": {
-            "Original": "five people have been taken to hospital with minor injuries following a crash on the a17 near sleaford",
-            "Predicted": "five people have been taken to hospital with minor injuries following a crash on the a17 near sleaford",
-            "Ratio": 100
-        },
-        "1417": {
-            "Original": "the ringgit closed lower against the us dollar",
-            "Predicted": "the ringgit closed lower against the us dollar",
-            "Ratio": 100
-        },
-        "4": {
-            "Original": "a woman was injured by a falling tree",
-            "Predicted": "a woman was injured by a falling tree",
-            "Ratio": 100
-        },
         "4153": {
             "Original": "the ringgit closed unchanged against the us dollar",
             "Predicted": "the ringgit closed closed against the us",
             "Ratio": 82
-        },
-        "7": {
-            "Original": "markets continued to remain under pressure",
-            "Predicted": "markets continued to remain under pressure",
-            "Ratio": 100
         },
         "7537": {
             "Original": "a man died in an atv crash",
@@ -194,11 +144,6 @@
             "Predicted": "european stocks closed lower",
             "Ratio": 88
         },
-        "4": {
-            "Original": "a woman was injured by a falling tree",
-            "Predicted": "a woman was injured by a falling tree",
-            "Ratio": 100
-        },
         "4572": {
             "Original": "egypt has declared a state of emergency",
             "Predicted": "obama has declared a state of emergency",
@@ -208,11 +153,6 @@
             "Original": "police are investigating a suspicious object",
             "Predicted": "police are investigating a possible",
             "Ratio": 81
-        },
-        "7": {
-            "Original": "markets continued to remain under pressure",
-            "Predicted": "markets continued to remain under pressure",
-            "Ratio": 100
         },
         "7221": {
             "Original": "topeka police are investigating a shooting",
@@ -261,11 +201,6 @@
             "Predicted": "a woman was killed in a two car",
             "Ratio": 82
         },
-        "4": {
-            "Original": "a woman was injured by a falling tree",
-            "Predicted": "a woman was injured by a falling tree",
-            "Ratio": 100
-        },
         "4153": {
             "Original": "the ringgit closed unchanged against the us dollar",
             "Predicted": "the ringgit closed lower against the us dollar",
@@ -285,11 +220,6 @@
             "Original": "aorato has raised 10 million",
             "Predicted": "harvest has raised rs million",
             "Ratio": 81
-        },
-        "7": {
-            "Original": "markets continued to remain under pressure",
-            "Predicted": "markets continued to remain under pressure",
-            "Ratio": 100
         },
         "7537": {
             "Original": "a man died in an atv crash",
@@ -353,11 +283,6 @@
             "Predicted": "george zimmerman has been found guilty",
             "Ratio": 95
         },
-        "3624": {
-            "Original": "taiwan stocks rose",
-            "Predicted": "taiwan stocks rose",
-            "Ratio": 100
-        },
         "3729": {
             "Original": "taiwan stocks were flat",
             "Predicted": "taiwan stocks were little",
@@ -387,11 +312,6 @@
             "Original": "a police officer was injured while responding to an accident",
             "Predicted": "a police officer was injured in an an accident",
             "Ratio": 83
-        },
-        "4935": {
-            "Original": "indian shares ended lower",
-            "Predicted": "indian shares ended lower",
-            "Ratio": 100
         },
         "5003": {
             "Original": "asian markets ended",

@@ -2,116 +2,139 @@
     "Ep_250_Ds_10000_Lr_0.001_Hs_256_Ml_0.5_Tf_0.5_GR_100_test_result.json": {
         "1979": {
             "Original": "chris brown is set to return to los angeles",
+            "Original_Text": "chris brown is set to return to los angeles after his misdemeanor assault trial was postponed for the second time",
             "Predicted": "chris brown is set to return to glee",
             "Ratio": 89
         },
         "2610": {
             "Original": "the australian market looks set to open higher",
+            "Original_Text": "the australian market looks set to open higher following strong gains on wall street after new federal reserve chief janet yellens congressional testimony appeared to reassure investors",
             "Predicted": "the australian market set to open up",
             "Ratio": 83
         },
         "2643": {
             "Original": "three men were arrested after a fight",
+            "Original_Text": "three men were arrested after a fight broke out in fulbourn near cambridge",
             "Predicted": "three men were arrested after taking a",
             "Ratio": 83
         },
         "2889": {
             "Original": "sbarro inc filed for bankruptcy protection",
+            "Original_Text": "sbarro inc the pizza chain owned by buyout firm midocean partners filed for bankruptcy protection after missing interest payments on its debt",
             "Predicted": "chris inc has filed for bankruptcy protection on",
             "Ratio": 82
         },
         "290": {
             "Original": "the australian market is trading flat",
+            "Original_Text": "the australian stock market is trading flat on monday tracking the mixed cues from wall street on friday",
             "Predicted": "the australian market is trading weak",
             "Ratio": 92
         },
         "3037": {
             "Original": "three people were hospitalized after a crash",
+            "Original_Text": "three people were hospitalized friday night after a crash at highway 99w and clow corner road in polk county",
             "Predicted": "three people were hospitalized after a shootout",
             "Ratio": 90
         },
         "3132": {
             "Original": "the australian share market is trading higher",
+            "Original_Text": "the australian share market is trading higher after moves by the us federal reserve buoyed investors",
             "Predicted": "the australian market is trading lower",
             "Ratio": 84
         },
         "3165": {
             "Original": "samsung electronics posted a record high of profit",
+            "Original_Text": "samsung electronics the worlds largest maker of smartphones flat panels and tvs posted a fresh record quarterly high of operating profit in the second quarter due to robust demand for its highend smartphones and tvs a regulatory filing showed friday",
             "Predicted": "samsung electronics opened a record high of 8 week",
             "Ratio": 82
         },
         "3672": {
             "Original": "michael vick has signed with the new york jets",
+            "Original_Text": "michael vick has signed with the new york jets after five seasons in philadelphia",
             "Predicted": "michael lohan has signed with the new york city",
             "Ratio": 84
         },
         "4572": {
             "Original": "egypt has declared a state of emergency",
+            "Original_Text": "egypt has declared a monthlong state of emergency as violence rages across the country following a crackdown on supporters of ousted president mohamed morsi",
             "Predicted": "zimbabwe has declared a state ban of emergency",
             "Ratio": 82
         },
         "4679": {
             "Original": "us stocks ended mostly higher",
+            "Original_Text": "us stocks ended mostly higher on thursday 17 october 2013 lifting the sp 500 to a record finish as wall street turned from the latest fiscal drama on capitol hill to corporate earnings that included betterthanexpected results from verizon communications",
             "Predicted": "us stocks ended higher",
             "Ratio": 86
         },
         "4808": {
             "Original": "oil prices edged lower in asian trade",
+            "Original_Text": "oil prices edged lower in asian trade today as dealers await fresh developments in the bid by world powers to reach a landmark deal to curb irans nuclear programme analysts said",
             "Predicted": "oil prices edged steady in asian trade",
             "Ratio": 88
         },
         "5003": {
             "Original": "asian markets ended",
+            "Original_Text": "asian markets ended lower monday as investors turned nervous after us budget talks hit a roadblock over the weekend on president obamas healthcare proposals taking the us federal government a step closer to a partial shutdown",
             "Predicted": "asian markets ended higher",
             "Ratio": 84
         },
         "5015": {
             "Original": "the reserve bank has cut interest rates",
+            "Original_Text": "the reserve bank has cut interest rates for the second time this year while keeping the door open for further cuts",
             "Predicted": "the reserve bank has cut interest rates for 4 5",
             "Ratio": 91
         },
         "5356": {
             "Original": "a man died after being struck by two cars",
+            "Original_Text": "a lynn man died yesterday after being struck by two cars on marlborough road this weekend",
             "Predicted": "a man died after being caught by two years",
             "Ratio": 84
         },
         "5497": {
             "Original": "the us trade deficit was narrowed in june",
+            "Original_Text": "the us trade deficit was narrowed in june reaching a threeandahalf year low",
             "Predicted": "the us trade deficit narrowed narrowed",
             "Ratio": 81
         },
         "571": {
             "Original": "george zimmerman has been found not guilty",
+            "Original_Text": "george zimmerman the man accused of murdering trayvon martin has been found not guilty of seconddegree murder and manslaughter",
             "Predicted": "george zimmerman has been found guilty to murder",
             "Ratio": 84
         },
         "5988": {
             "Original": "asian stocks ended broadly higher",
+            "Original_Text": "asian stocks ended broadly higher on thursday despite some weak economic data out of japan and australia and caution ahead of the federal open market committee meeting scheduled next week with speculation running high that the fed will go ahead with reducing stimulus albeit more modestly than some had previously expected",
             "Predicted": "asian stocks ended higher",
             "Ratio": 86
         },
         "645": {
             "Original": "christina aguilera are expecting a baby girl",
+            "Original_Text": "christina aguilera and fiance matt rutler are expecting a baby girl",
             "Predicted": "christina aguilera are engaged a baby",
             "Ratio": 81
         },
         "7457": {
             "Original": "bradley manning was sentenced to 35 years",
+            "Original_Text": "bradley manning was sentenced to 35 years in prison wednesday for leaking classified documents",
             "Predicted": "bradley manning was sentenced to 15 years in prison",
             "Ratio": 87
         },
         "8221": {
             "Original": "german stocks were little changed",
+            "Original_Text": "german stocks were little changed as beiersdorf ag and henkel ag shares rose offsetting a report that showed chinas exports and imports unexpectedly dropped",
             "Predicted": "german stocks were little stocks",
             "Ratio": 83
         },
         "9657": {
             "Original": "hong kong shares ended flat",
+            "Original_Text": "hong kong shares ended flat on thursday as weakness in the local property sector offset an 11 6 percent surge for li fung as investors covered short bets on hopes that the worst is over for the exporter",
             "Predicted": "hong kong shares closed flat",
             "Ratio": 87
         },
         "9725": {
             "Original": "the australian market looks set to open higher",
+            "Original_Text": "the australian market looks set to open higher following gains on international markets after federal reserve chief nominee janet yellen bolstered expectations of the fed keeping the flow of easy money",
             "Predicted": "the australian market set to open the open",
             "Ratio": 82
         }
@@ -119,16 +142,19 @@
     "Ep_250_Ds_10000_Lr_0.01_Hs_256_Ml_0.08_Tf_0.5_GR_100_test_result.json": {
         "4153": {
             "Original": "the ringgit closed unchanged against the us dollar",
+            "Original_Text": "said dealers currencies major other visavis strengthened but today dollar us the against unchanged closed ringgit the",
             "Predicted": "the ringgit closed closed against the us",
             "Ratio": 82
         },
         "7537": {
             "Original": "a man died in an atv crash",
+            "Original_Text": "crash atv an in night saturday died perdido from man old 28year a",
             "Predicted": "a man died in a from a crash",
             "Ratio": 85
         },
         "8212": {
             "Original": "decatur police are investigating the death",
+            "Original_Text": "said police morning this early avenue 6th on 6 motel a in died who man a of death the investigating are police decatur",
             "Predicted": "ahmedabad police are investigating the death",
             "Ratio": 84
         }
@@ -136,46 +162,55 @@
     "Ep_250_Ds_10000_Lr_0.01_Hs_256_Ml_0.2_Tf_0.5_GR_100_test_result.json": {
         "1": {
             "Original": "five people have been taken to hospital with minor injuries following a crash on the a17 near sleaford",
+            "Original_Text": "morning this sleaford near a17 the on crash a following injuries minor with hospital to taken been have people five",
             "Predicted": "five people have been taken to hospital with minor injuries following a crash on crash",
             "Ratio": 88
         },
         "1694": {
             "Original": "european stocks closed",
+            "Original_Text": "said dealers greece for aid fresh in euros of billions release to agreeing eurozone the with and alcoa giant aluminium us from earnings betterthanexpected by boosted tuesday on note positive a on closed stocks european",
             "Predicted": "european stocks closed lower",
             "Ratio": 88
         },
         "4572": {
             "Original": "egypt has declared a state of emergency",
+            "Original_Text": "morsi mohamed president ousted of supporters on crackdown a following country the across rages violence as emergency of state monthlong a declared has egypt",
             "Predicted": "obama has declared a state of emergency",
             "Ratio": 87
         },
         "5624": {
             "Original": "police are investigating a suspicious object",
+            "Original_Text": "canada and 12th near object suspicious a investigating scene the on are police",
             "Predicted": "police are investigating a possible",
             "Ratio": 81
         },
         "7221": {
             "Original": "topeka police are investigating a shooting",
+            "Original_Text": "happened it where know dont they but shooting a investigating are police topeka",
             "Predicted": "police are investigating a first shooting",
             "Ratio": 84
         },
         "7537": {
             "Original": "a man died in an atv crash",
+            "Original_Text": "crash atv an in night saturday died perdido from man old 28year a",
             "Predicted": "a man died from an car crash",
             "Ratio": 81
         },
         "8018": {
             "Original": "an atlantic city police officer was injured in an atv crash",
+            "Original_Text": "call a to responding while crash atv an in injured was officer police city atlantic an say authorities",
             "Predicted": "an police officer was injured in an car crash",
             "Ratio": 83
         },
         "8059": {
             "Original": "paul are celebrating their 60th anniversary",
+            "Original_Text": "anniversary wedding 60th their celebrating are kalkaska of lobb lou mary and paul",
             "Predicted": "vic are celebrating their 50th anniversary",
             "Ratio": 89
         },
         "9549": {
             "Original": "grubhub inc today announced the pricing of its initial public offering",
+            "Original_Text": "share per 00 of26 public the to price a at stock common its of 7405614 of offering public initial its of pricing the announced today restaurants takeout local with diners hungry connecting to dedicated company ordering food mobile and online leading nations the inc grubhub",
             "Predicted": "mela inc today announced the pricing of a public offering",
             "Ratio": 83
         }
@@ -183,51 +218,61 @@
     "Ep_250_Ds_10000_Lr_0.01_Hs_256_Ml_0.3_Tf_0.5_GR_100_test_result.json": {
         "1": {
             "Original": "five people have been taken to hospital with minor injuries following a crash on the a17 near sleaford",
+            "Original_Text": "morning this sleaford near a17 the on crash a following injuries minor with hospital to taken been have people five",
             "Predicted": "five people have been taken to hospital with minor injuries following a crash the the the",
             "Ratio": 88
         },
         "1417": {
             "Original": "the ringgit closed lower against the us dollar",
+            "Original_Text": "said dealers weekend the of ahead position their trimmed traders as today dollar us the against lower closed ringgit the",
             "Predicted": "the ringgit closed against us dollar closed",
             "Ratio": 81
         },
         "1694": {
             "Original": "european stocks closed",
+            "Original_Text": "said dealers greece for aid fresh in euros of billions release to agreeing eurozone the with and alcoa giant aluminium us from earnings betterthanexpected by boosted tuesday on note positive a on closed stocks european",
             "Predicted": "european stocks closed lower 1",
             "Ratio": 85
         },
         "2314": {
             "Original": "a woman was killed in a motorcycle crash",
+            "Original_Text": "monday crash motorcycle a in killed was woman joppa a",
             "Predicted": "a woman was killed in a two car",
             "Ratio": 82
         },
         "4153": {
             "Original": "the ringgit closed unchanged against the us dollar",
+            "Original_Text": "said dealers currencies major other visavis strengthened but today dollar us the against unchanged closed ringgit the",
             "Predicted": "the ringgit closed lower against the us dollar",
             "Ratio": 88
         },
         "430": {
             "Original": "a man was arrested for rape bid on a minor",
+            "Original_Text": "night friday on late juhi in minor a on bid rape for arrested was man middleaged a",
             "Predicted": "a man was arrested for raping a rock",
             "Ratio": 82
         },
         "4341": {
             "Original": "ronald celebrated their 50th anniversary",
+            "Original_Text": "anniversary wedding 50th their celebrated deaner donna and ronald",
             "Predicted": "vic celebrated their 50th anniversary",
             "Ratio": 88
         },
         "5588": {
             "Original": "aorato has raised 10 million",
+            "Original_Text": "partners capital glilot and endeavors innovation loonkar rakesh boodaei mickey partners accel from funding in million 10 raised has aorato startup cybersecurity israeli",
             "Predicted": "harvest has raised rs million",
             "Ratio": 81
         },
         "7537": {
             "Original": "a man died in an atv crash",
+            "Original_Text": "crash atv an in night saturday died perdido from man old 28year a",
             "Predicted": "a man died in a car crash",
             "Ratio": 90
         },
         "9005": {
             "Original": "danville police are investigating an attempted robbery",
+            "Original_Text": "street sixth north on tuesday am 1249 around happened that robbery attempted an investigating are police danville",
             "Predicted": "police are investigating an armed robbery",
             "Ratio": 84
         }
@@ -235,171 +280,205 @@
     "Ep_250_Ds_20000_Lr_0.001_Hs_256_Ml_0.4_Tf_0.5_GR_100_test_result.json": {
         "1492": {
             "Original": "an east st louis man is accused of beating his daughter",
+            "Original_Text": "an east st louis man is accused of beating his infant daughter after she was hospitalized with a cracked skull broken rips and eye trauma",
             "Predicted": "an east st louis man is accused of assaulting after his brother",
             "Ratio": 81
         },
         "2101": {
             "Original": "fire destroyed a cotati home",
+            "Original_Text": "fire destroyed a cotati home on saturday afternoon a rancho adobe fire captain said monday",
             "Predicted": "fire destroyed a home",
             "Ratio": 86
         },
         "2542": {
             "Original": "vybz kartel was sentenced to life in prison",
+            "Original_Text": "dancehall reggae artist vybz kartel was sentenced to life in prison today in jamaica",
             "Predicted": "how rock was sentenced to life in prison",
             "Ratio": 82
         },
         "290": {
             "Original": "the australian market is trading flat",
+            "Original_Text": "the australian stock market is trading flat on monday tracking the mixed cues from wall street on friday",
             "Predicted": "the australian market is trading",
             "Ratio": 93
         },
         "3037": {
             "Original": "three people were hospitalized after a crash",
+            "Original_Text": "three people were hospitalized friday night after a crash at highway 99w and clow corner road in polk county",
             "Predicted": "three people were hospitalized after a crash with a truck left",
             "Ratio": 83
         },
         "3132": {
             "Original": "the australian share market is trading higher",
+            "Original_Text": "the australian share market is trading higher after moves by the us federal reserve buoyed investors",
             "Predicted": "the australian market is trading higher",
             "Ratio": 93
         },
         "3138": {
             "Original": "two children were burnt to death",
+            "Original_Text": "two threeyearold children were burnt to death when a makeshift hut in a paddy field accidentally caught fire in odishas phulbani district today the police said",
             "Predicted": "two students were burnt to death",
             "Ratio": 84
         },
         "3165": {
             "Original": "samsung electronics posted a record high of profit",
+            "Original_Text": "samsung electronics the worlds largest maker of smartphones flat panels and tvs posted a fresh record quarterly high of operating profit in the second quarter due to robust demand for its highend smartphones and tvs a regulatory filing showed friday",
             "Predicted": "samsung electronics posted a record profit",
             "Ratio": 91
         },
         "341": {
             "Original": "a burn ban was lifted",
+            "Original_Text": "a burn ban for jefferson county was lifted monday after enough rainfall coupled with the promise of more this week prompted county commissioners to believe the danger of wildfires had sufficiently declined",
             "Predicted": "a burn ban was captured",
             "Ratio": 82
         },
         "3492": {
             "Original": "george zimmerman has been found not guilty",
+            "Original_Text": "george zimmerman has been found not guilty of seconddegree murder in the shooting death of trayvon martin",
             "Predicted": "george zimmerman has been found guilty",
             "Ratio": 95
         },
         "3729": {
             "Original": "taiwan stocks were flat",
+            "Original_Text": "taiwan stocks were flat on monday underperforming regional peers after president ma yingjeou lashed a parliament leader over alleged lobbying",
             "Predicted": "taiwan stocks were little",
             "Ratio": 88
         },
         "4217": {
             "Original": "qantas airways has increased its stake in jetstar japan",
+            "Original_Text": "qantas airways has increased its stake in jetstar japan to help fund the low cost carriers growth",
             "Predicted": "qantas airways has increased its stake in to to to",
             "Ratio": 84
         },
         "4339": {
             "Original": "a trufant man has been charged with drug possession",
+            "Original_Text": "a trufant man has been charged with drug possession in connection with an incident in haring township",
             "Predicted": "a man man has been charged with drug possession in an assault",
             "Ratio": 82
         },
         "4534": {
             "Original": "wade redden announced his retirement",
+            "Original_Text": "after 14 nhl seasons and 69615666 in career earnings wade redden announced his retirement from professional hockey at the tender age of 36",
             "Predicted": "kanye cricket announced his retirement",
             "Ratio": 81
         },
         "4693": {
             "Original": "a police cruiser was involved in a crash",
+            "Original_Text": "a police cruiser was involved in a twovehicle crash at steeles avenue east and dixie road this afternoon",
             "Predicted": "a police officer was involved in a crash",
             "Ratio": 90
         },
         "4847": {
             "Original": "a police officer was injured while responding to an accident",
+            "Original_Text": "a police officer was injured while responding to an injury accident on thursday morning in newton",
             "Predicted": "a police officer was injured in an an accident",
             "Ratio": 83
         },
         "5003": {
             "Original": "asian markets ended",
+            "Original_Text": "asian markets ended lower monday as investors turned nervous after us budget talks hit a roadblock over the weekend on president obamas healthcare proposals taking the us federal government a step closer to a partial shutdown",
             "Predicted": "asian markets ended lower",
             "Ratio": 86
         },
         "5015": {
             "Original": "the reserve bank has cut interest rates",
+            "Original_Text": "the reserve bank has cut interest rates for the second time this year while keeping the door open for further cuts",
             "Predicted": "the reserve bank has cut rates work",
             "Ratio": 81
         },
         "5318": {
             "Original": "the us trade deficit widened slightly",
+            "Original_Text": "the us trade deficit widened only slightly in august dragged lower by a modest decline in exports",
             "Predicted": "the us trade deficit widened",
             "Ratio": 86
         },
         "5535": {
             "Original": "a golden gate man is accused of having sex with a minor",
+            "Original_Text": "a 35yearold golden gate man is accused of having sex with a minor on at least five occasions",
             "Predicted": "a golden gate man is accused of having sex sex",
             "Ratio": 85
         },
         "5587": {
             "Original": "a man has been charged with gross sexual assault",
+            "Original_Text": "a kennebunk man has been charged with attempted gross sexual assault after a report of a domestic dispute",
             "Predicted": "a sexual man has been charged with sexual assault",
             "Ratio": 87
         },
         "5988": {
             "Original": "asian stocks ended broadly higher",
+            "Original_Text": "asian stocks ended broadly higher on thursday despite some weak economic data out of japan and australia and caution ahead of the federal open market committee meeting scheduled next week with speculation running high that the fed will go ahead with reducing stimulus albeit more modestly than some had previously expected",
             "Predicted": "asian stocks ended higher",
             "Ratio": 86
         },
         "645": {
             "Original": "christina aguilera are expecting a baby girl",
+            "Original_Text": "christina aguilera and fiance matt rutler are expecting a baby girl",
             "Predicted": "christina aguilera are expecting a new york",
             "Ratio": 85
         },
         "6934": {
             "Original": "indian shares ended flat tuesday",
+            "Original_Text": "indian shares ended flat tuesday as shortcovering in beaten down interestratesensitive stocks was offset by profittaking in blue chips that outperformed the market in recent sessions",
             "Predicted": "indian shares ended flat",
             "Ratio": 86
         },
         "6995": {
             "Original": "police are investigating a suspicious death in silverton",
+            "Original_Text": "police are investigating a suspicious death in silverton after a father called 911 saying hed found his son dead in a pool of blood",
             "Predicted": "police are investigating a suspicious death death",
             "Ratio": 88
         },
         "7114": {
             "Original": "indian shares ended lower",
+            "Original_Text": "indian shares ended lower tuesday after a rally last week that took the benchmark index to an alltime high friday",
             "Predicted": "indian shares ended lower tuesday",
             "Ratio": 86
         },
         "7221": {
             "Original": "topeka police are investigating a shooting",
+            "Original_Text": "topeka police are investigating a shooting but they dont know where it happened",
             "Predicted": "topeka police are investigating a possible",
             "Ratio": 86
         },
         "7243": {
             "Original": "a police officer was involved in a wrong way crash",
+            "Original_Text": "a dallas police officer was involved in a wrong way crash with a suspected drunk driver",
             "Predicted": "a police officer was involved in a car crash",
             "Ratio": 89
         },
         "7368": {
             "Original": "george zimmerman was arrested on domestic violence charges",
+            "Original_Text": "george zimmerman who was acquitted this summer of murdering teenager trayvon martin was arrested on domestic violence charges monday after pointing a shotgun at his girlfriend breaking a table and pushing her out of her seminole county home deputies said",
             "Predicted": "george zimmerman was arrested on domestic driving",
             "Ratio": 86
         },
         "7431": {
             "Original": "more than 1000 people were killed in iraq in january",
+            "Original_Text": "baghdad more than 1000 people were killed in iraq in january figures showed friday as the country grapples with a surge in attacks and battles militants holding territory on baghdads doorstep",
             "Predicted": "more than 19 people were killed in srinagar",
             "Ratio": 84
         },
         "7544": {
             "Original": "a woman was arrested after she stabbed her boyfriend",
+            "Original_Text": "a woman was arrested wednesday after she allegedly stabbed her boyfriend in the back with a hunting knife",
             "Predicted": "a woman was arrested after she stabbed in the head",
             "Ratio": 86
         },
         "7981": {
             "Original": "nelson mandela rose up again",
+            "Original_Text": "nelson mandela rose up again at the union buildings in pretoria yesterday",
             "Predicted": "nelson mandela rose 11 3",
             "Ratio": 81
         },
         "8080": {
             "Original": "us home prices rose in february",
+            "Original_Text": "us singlefamily home prices rose in february and slightly beat expectations a closely watched survey said on tuesday",
             "Predicted": "us home prices remained 0 1 in february",
             "Ratio": 83
         },
         "861": {
             "Original": "iraqi forces killed six alqaeda militants",
+            "Original_Text": "iraqi forces killed six suspected alqaeda militants during an operation north of baghdad on monday while two soldiers and seven civilians died in attacks officials said",
             "Predicted": "iraqi forces killed fired militants",
             "Ratio": 87
         }

@@ -38,7 +38,13 @@ lst_rouge_l_r = []
 statement_data = {}
 metric_data = {}
 
-def similarity(file_name,index,st_1,st_2):
+def reverse_sentence(text):
+	l = text.split()
+	l = l[::-1]
+	text = " ".join(l)
+	return text
+
+def similarity(file_name,index,st_1,st_2,summary):
 	ratio = fuzz.ratio(st_1.lower(),st_2.lower())
 
 	if ratio<=80 or ratio>=98:
@@ -48,6 +54,8 @@ def similarity(file_name,index,st_1,st_2):
 		statement_data[file_name] = {}
 
 	statement_data[file_name][index] = {}
+
+	statement_data[file_name][index]['Original_Text'] = reverse_sentence(summary)
 	statement_data[file_name][index]['Predicted'] = st_1
 	statement_data[file_name][index]['Original'] = st_2
 	statement_data[file_name][index]['Ratio'] = ratio	
@@ -96,7 +104,7 @@ def processJson(item,json_data):
 		lst_rouge_l_r\
 		.append(float(json_data[key]['Score'][0]['rouge-l']['r']))
 
-		similarity(item,key,json_data[key]['Generated_Summary'],json_data[key]['Orignal_Summary'])
+		similarity(item,key,json_data[key]['Generated_Summary'],json_data[key]['Orignal_Summary'],json_data[key]["Original_Text"])
 	
 	metric_data[item] = {}
 

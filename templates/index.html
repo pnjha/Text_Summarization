@@ -3,13 +3,13 @@
 {% block input_text %}
 <p>
 
-<textarea name ="input_text" rows="4" cols="50" value="{{request.form.input_text}}" required>
+<textarea name ="input_text" rows="10" cols="100" value="{{request.form.input_text}}" required>
 {{input_text}}
 </textarea>
 <br>
 <label><b>Enter Expected Summary (Not Required)</b></label>
 <br>
-<textarea name="expected_summary" rows="4" cols="50" value="{{request.form.expected_summary}}">
+<textarea name="expected_summary" rows="10" cols="100" value="{{request.form.expected_summary}}">
 {{expected_summary}}
 </textarea>
 
@@ -17,8 +17,12 @@
 {% endblock %}
 
 {% block summary %}
-<textarea id="summary" rows="4" cols="50">
+<p>
+<label><b>Summary</b></label>
+<br>
+<textarea id="summary" rows="10" cols="100">
 {{summary}}
 </textarea>
+</p>
 {% endblock %} 
 

@@ -11,27 +11,42 @@
     <link href="//fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
+
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/mdb.min.css')}}">
 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bootstrap.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/font-awesome.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css')}}">
 
+    <style>
+        body {background-color: #FFF8DC;}
+    div.justified {
+        display: flex;
+        justify-content: center;
+    }
+    </style>
+
   </head>
 
   <body>
-    <form action="/summarize" method='POST'> 
-      
-        <label><b>Enter your text (Required)</b></label>
-        {% block input_text %}{% endblock %}           
-        <p>
-            <button type="submit" class="signupbtn" style="float: center;">Submit</button> 
-        </p>
-     
-    </form>
-    
-    <label><b>Summary</b></label>
-    <br>{% block summary %}{% endblock %}
+    <h1>Abstractive Text Summarizer</h1>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <br>
+    <div class="justified">
+        <form action="/summarize" method='POST'> 
+            <label><b>Enter your text (Required)</b></label>
+            {% block input_text %}{% endblock %}           
+            <p>
+                <button type="submit" class="signupbtn" style="float: center;">Submit</button>  
+            </p>
+         
+        </form>
+
+    </div>
+    <div class="justified">
+    {% block summary %}{% endblock %}
+    </div>
+
 
     <script src="{{ url_for('static',filename='js/jquery-3.3.1.min.js')}}"></script>
     <script src="{{ url_for('static',filename='js/popper.min.js')}}"></script>

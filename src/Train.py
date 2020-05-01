@@ -41,7 +41,7 @@ class Train():
         encoder_outputs_backward = torch.zeros(self.MAX_LENGTH, encoder.hidden_size, device=device)
 
         loss = 0
-        
+
         for ei in range(input_length):
             encoder_output_forward, encoder_hidden_forward = encoder(input_tensor[ei], encoder_hidden_forward,True)
             encoder_outputs_forward[ei] = encoder_output_forward[0, 0]
@@ -127,11 +127,12 @@ class Train():
 
         epoch_loss_list = []
         
+        training_pairs = [tensorsFromPair(pair,input_lang,output_lang, device, self.EOS_TOKEN, self.UNK_TOKEN) for pair in pairs]
+        
         for i in range(self.EPOCHS):
             
             loss = 0
             start = time.time()
-            training_pairs = [tensorsFromPair(pair,input_lang,output_lang, device, self.EOS_TOKEN, self.UNK_TOKEN) for pair in pairs]
             
             for iter in tqdm(range(1, n_iters + 1)):
 

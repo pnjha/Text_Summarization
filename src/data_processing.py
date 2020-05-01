@@ -14,11 +14,11 @@ def process_text(text,contraction_mapping,flag=False):
         word = text[i]
         if word in contraction_mapping:
             text[i] = contraction_mapping[word]
-    # newtext = []
-    # for word in text:
-    #     if word not in stop_words and len(word)>0:
-    #         newtext.append(word)
-    # text = newtext
+    newtext = []
+    for word in text:
+        if word not in stop_words and len(word)>0:
+            newtext.append(word)
+    text = newtext
     if flag:
         text = text[::-1]
     text = " ".join(text)
@@ -52,6 +52,7 @@ def parseLanguageInput(lang1,lang2,fullFilePath,SOS_token,EOS_token,UNK_token):
 
     input_lang = Lang(lang1,SOS_token,EOS_token,UNK_token)
     output_lang = Lang(lang2,SOS_token,EOS_token,UNK_token)
+
 
     return input_lang, output_lang, pairs
 

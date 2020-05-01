@@ -4,6 +4,7 @@ from Decoder import  *
 from Encoder import  *
 from packages import *
 from data_processing import *
+from Beam_Search import *
 
 class Evaluate():
 
@@ -101,7 +102,7 @@ class Evaluate():
             elif len(decoder_output_backward_list) > len(decoder_output_forward_list):                     
                 for i in range(len(decoder_output_forward_list)-1,len(decoder_output_backward_list)):
                     decoder_output.append(decoder_output_backward_list[i])
-
+            decoder_output = bi_directional_beam_decode(decoder_output_forward_list,decoder_output_backward_list)
             for i in range(len(decoder_output)):
                 topv, topi = decoder_output[i].data.topk(1)
                 if topi.item() == self.UNK_TOKEN:

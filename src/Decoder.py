@@ -21,14 +21,14 @@ class AttnDecoderRNN(nn.Module):
         self.attn_coverage_cat = nn.Linear(self.hidden_size*3, self.max_length)
 
         self.dropout_layer = nn.Dropout(self.dropout)
-        self.gru_forward = nn.GRU(self.hidden_size, self.hidden_size)
-        self.gru_backward = nn.GRU(self.hidden_size, self.hidden_size)
+        self.lstm_forward = nn.LSTM(self.hidden_size, self.hidden_size, num_layers=self.n_layers)
+        self.lstm_backward = nn.LSTM(self.hidden_size, self.hidden_size, num_layers=self.n_layers)
         self.out = nn.Linear(self.hidden_size, self.output_size)
 
     def forward(self, input, hidden, encoder_outputs, flag):
         embedded = self.embedding(input).view(1, 1, -1)
         embedded = self.dropout_layer(embedded)
-        
+
         attn_weights = F.softmax(self.attn(torch.cat((embedded[0], hidden[0]), 1)), dim=1)
         lcl_cumulative_sum = torch.cumsum(attn_weights, -1)
         lcl_Y1 = self.attn_coverage(lcl_cumulative_sum)
@@ -42,13 +42,18 @@ class AttnDecoderRNN(nn.Module):
         output = self.attn_combine(output).unsqueeze(0)
 
         output = F.relu(output)
-        if flag:
-            output, hidden = self.gru_forward(output, hidden)
-        else:
-            output, hidden = self.gru_backward(output, hidden)
+        out = output
+        for i in range(self.n_layers-1):
+            output = torch.cat((output,out))
 
+        if flag:
+            output, hidden = self.lstm_forward(embedded, (output, hidden))
+        else:
+            output, hidden = self.lstm_backward(embedded, (output, hidden))
+
+        hidden = hidden[0] + hidden[1]
         output = F.log_softmax(self.out(output[0]), dim=1)
         return output, hidden, attn_weights
 
     def initHidden(self):
-        return torch.zeros(1, 1, self.hidden_size, device=device)
+        return torch.zeros(self.n_layers, 1, self.hidden_size, device=device).to(device)

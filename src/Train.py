@@ -4,6 +4,7 @@ from Decoder import  *
 from Encoder import  *
 from packages import *
 from data_processing import *
+from Beam_Search import *
 
 class Train():
 
@@ -98,7 +99,6 @@ class Train():
                         backward_flag = False
 
         backward_output = backward_output[::-1]
-
         for di in range(min(len(forward_output),len(backward_output))):
             loss += criterion((forward_output[di]+backward_output[di]), target_tensor[di])
 

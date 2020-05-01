@@ -120,7 +120,7 @@ print(len(vocab))
 
 fname = get_tmpfile(os.getcwd()+"/pretrained_layer/fasttext.model")
 
-model = FastText(size=100, min_count=1)
+model = FastText(size=100, min_count=2)
 model.build_vocab(sentences=train_org_corpus)
 model.train(sentences=train_org_corpus, total_examples=len(train_org_corpus), epochs=2)
 

@@ -6,7 +6,6 @@ class EncoderRNN(nn.Module):
         self.hidden_size = hidden_size
         self.embedding = nn.Embedding(input_size, hidden_size)
         self.embedding.weight.data.copy_(torch.from_numpy(pretrained_weight))
-        self.gru = nn.GRU(hidden_size, hidden_size)
         self.lstm_forward = nn.LSTM(hidden_size, hidden_size, num_layers=self.n_layers)
         self.lstm_backward = nn.LSTM(hidden_size, hidden_size,num_layers=self.n_layers)
     def forward(self, input, hidden, flag):

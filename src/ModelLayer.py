@@ -87,7 +87,7 @@ class ModelLayer:
                     decoder_output.append(decoder_output_backward_list[i])
             decoder_output = bi_directional_beam_decode(decoder_output_forward_list,decoder_output_backward_list)
             for i in range(len(decoder_output)):
-                topv, topi = decoder_output[i].data.topk(1)
+                # topv, topi = decoder_output[i].data.topk(1)
                 if topi.item() == self.UNK_TOKEN:
                     decoded_words.append('<UNK>')
                 else:
